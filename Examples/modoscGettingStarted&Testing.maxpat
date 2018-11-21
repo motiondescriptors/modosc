@@ -989,7 +989,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 545.5, 812.0, 71.0, 22.0 ],
+					"patching_rect" : [ 545.5, 775.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1010,7 +1010,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 514.5, 725.0, 50.0, 22.0 ]
+					"patching_rect" : [ 514.5, 688.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1020,7 +1020,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 576.0, 705.0, 44.0, 20.0 ],
+					"patching_rect" : [ 576.0, 668.0, 44.0, 20.0 ],
 					"text" : "Blue"
 				}
 
@@ -1031,7 +1031,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 724.0, 703.0, 44.0, 20.0 ],
+					"patching_rect" : [ 724.0, 666.0, 44.0, 20.0 ],
 					"text" : "Green"
 				}
 
@@ -1042,7 +1042,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 890.0, 705.0, 33.0, 20.0 ],
+					"patching_rect" : [ 890.0, 668.0, 33.0, 20.0 ],
 					"text" : "Red"
 				}
 
@@ -1053,7 +1053,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 684.0, 775.0, 63.0, 20.0 ],
+					"patching_rect" : [ 684.0, 738.0, 63.0, 20.0 ],
 					"text" : "plot on/off"
 				}
 
@@ -1065,7 +1065,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 847.5, 675.0, 99.0, 22.0 ],
+					"patching_rect" : [ 847.5, 638.0, 99.0, 22.0 ],
 					"text" : "scale 0. 15. 0. 1."
 				}
 
@@ -1077,7 +1077,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 701.0, 675.0, 99.0, 22.0 ],
+					"patching_rect" : [ 701.0, 638.0, 99.0, 22.0 ],
 					"text" : "scale 0. 30. 0. 1."
 				}
 
@@ -1091,7 +1091,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 603.5, 773.0, 30.0, 25.0 ]
+					"patching_rect" : [ 603.5, 736.0, 30.0, 25.0 ]
 				}
 
 			}
@@ -1104,7 +1104,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 569.0, 773.0, 30.0, 25.0 ]
+					"patching_rect" : [ 569.0, 736.0, 30.0, 25.0 ]
 				}
 
 			}
@@ -1115,7 +1115,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 545.5, 675.0, 105.0, 22.0 ],
+					"patching_rect" : [ 545.5, 638.0, 105.0, 22.0 ],
 					"text" : "scale 0. 100. 0. 1."
 				}
 
@@ -1126,7 +1126,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 646.0, 56.0, 20.0 ],
+					"patching_rect" : [ 908.0, 609.0, 56.0, 20.0 ],
 					"text" : "jrk mag"
 				}
 
@@ -1137,7 +1137,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 762.0, 645.0, 56.0, 20.0 ],
+					"patching_rect" : [ 762.0, 608.0, 56.0, 20.0 ],
 					"text" : "acc mag"
 				}
 
@@ -1148,7 +1148,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 603.5, 641.0, 53.0, 20.0 ],
+					"patching_rect" : [ 603.5, 604.0, 53.0, 20.0 ],
 					"text" : "vel mag"
 				}
 
@@ -1162,7 +1162,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 847.5, 645.0, 50.0, 22.0 ]
+					"patching_rect" : [ 847.5, 608.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1175,7 +1175,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 701.0, 645.0, 50.0, 22.0 ]
+					"patching_rect" : [ 701.0, 608.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1188,7 +1188,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 545.5, 641.0, 50.0, 22.0 ]
+					"patching_rect" : [ 545.5, 604.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1199,7 +1199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "FullPacket" ],
-					"patching_rect" : [ 545.5, 604.0, 585.0, 22.0 ],
+					"patching_rect" : [ 545.5, 567.0, 585.0, 22.0 ],
 					"text" : "o.route /modosc/points/RBody2/vel_mag /modosc/points/RBody2/acc_mag /modosc/points/RBody2/jrk_mag"
 				}
 
@@ -1224,7 +1224,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 649.5, 773.0, 24.0, 24.0 ]
+					"patching_rect" : [ 649.5, 736.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1237,7 +1237,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 534.5, 773.0, 30.0, 25.0 ]
+					"patching_rect" : [ 534.5, 736.0, 30.0, 25.0 ]
 				}
 
 			}
@@ -1247,7 +1247,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 636.0, 564.0, 150.0, 20.0 ],
+					"patching_rect" : [ 636.0, 527.0, 150.0, 20.0 ],
 					"text" : "plot 3 variables"
 				}
 
@@ -1259,7 +1259,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 660.0, 812.0, 37.0, 22.0 ],
+					"patching_rect" : [ 660.0, 775.0, 37.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -1271,7 +1271,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "list", "int", "" ],
-					"patching_rect" : [ 545.5, 855.0, 600.0, 200.0 ]
+					"patching_rect" : [ 545.5, 818.0, 600.0, 200.0 ]
 				}
 
 			}
@@ -1527,13 +1527,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-17",
-					"linecount" : 19,
+					"linecount" : 7,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 561.5, 44.0, 673.0, 265.0 ],
-					"text" : "/modosc/points/RBody1/pos : [62.4, -67.6, -2.6],\n/modosc/points/RBody1/rot_rpy : [-67.2, -36., -10.8],\n/modosc/points/RBody2/pos : [31.4, -44.8, 46.2],\n/modosc/points/RBody2/rot_rpy : [18.4, -10.8, 52.6],\n/modosc/points/RBody1/vel : [1.70042, -2.92751, 0.928702],\n/modosc/points/RBody1/vel_mag : 3.51059,\n/modosc/points/RBody2/vel : [-2.3914, -2.34845, 2.32839],\n/modosc/points/RBody2/vel_mag : 4.08111,\n/modosc/points/RBody2/acc : [0.000323797, -0.0303272, -0.0553674],\n/modosc/points/RBody2/acc_mag : 0.06313,\n/modosc/points/RBody2/jrk : [-0.159846, -0.98865, 0.82164],\n/modosc/points/RBody2/jrk_mag : 1.2954,\n/modosc/groups/mygroup1/points : [\"/RBody1\", \"/RBody2\"],\n/modosc/groups/mygroup1/weights : [3., 22.],\n/modosc/points/grp1_cntrd/pos : [46.9, -56.2, 21.8],\n/modosc/groups/mygroup1/qom : 50.158,\n/modosc/groups/mygroup1/bbox : [31., 22.8, 48.8],\n/modosc/groups/mygroup1/ci : 0.0311783,\n/modosc/points/newPoint/pos : [0, 0, 0]",
+					"patching_rect" : [ 561.5, 44.0, 673.0, 279.0 ],
+					"text" : "/modosc/points/RBody1/pos : [-10.4, -9.6, -8.4],\n/modosc/points/RBody1/rot_rpy : [4., -2.8, 3.2],\n/modosc/points/RBody1/vel : [0.45751, -0.883704, 0.776864],\n/modosc/points/RBody1/vel_mag : 1.26244,\n/modosc/groups/mygroup1/points : [\"/RBody1\", \"/RBody2\"],\n/modosc/groups/mygroup1/weights : [3., 22.],\n/modosc/points/newPoint/pos : [0, 0, 0]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1556,7 +1556,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 945.0, 98.0, 20.0 ],
+					"patching_rect" : [ 254.0, 886.0, 98.0, 20.0 ],
 					"text" : "<-- or this for 3D"
 				}
 
@@ -1652,7 +1652,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 63.5, 902.0, 275.0, 20.0 ],
+					"patching_rect" : [ 46.5, 843.0, 275.0, 20.0 ],
 					"text" : "For testing you can generate some fake qtm data."
 				}
 
@@ -1663,7 +1663,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 88.5, 945.0, 140.0, 20.0 ],
+					"patching_rect" : [ 71.5, 886.0, 140.0, 20.0 ],
 					"text" : "<-- use this one for now!"
 				}
 
@@ -2124,7 +2124,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 245.0, 986.0, 133.0, 22.0 ],
+					"patching_rect" : [ 228.0, 927.0, 133.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2142,7 +2142,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 245.0, 1030.0, 140.0, 22.0 ],
+					"patching_rect" : [ 228.0, 971.0, 140.0, 22.0 ],
 					"text" : "udpsend 127.0.0.1 1717"
 				}
 
@@ -2155,7 +2155,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 245.0, 943.0, 24.0, 24.0 ]
+					"patching_rect" : [ 228.0, 884.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2243,7 +2243,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-24",
-									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -2534,7 +2533,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 58.0, 986.0, 161.0, 22.0 ],
+					"patching_rect" : [ 41.0, 927.0, 161.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2552,7 +2551,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.0, 1030.0, 140.0, 22.0 ],
+					"patching_rect" : [ 41.0, 971.0, 140.0, 22.0 ],
 					"text" : "udpsend 127.0.0.1 1717"
 				}
 
@@ -2565,7 +2564,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 58.0, 943.0, 24.0, 24.0 ]
+					"patching_rect" : [ 41.0, 884.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2688,7 +2687,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 669.5, 844.0, 555.0, 844.0 ],
+					"midpoints" : [ 669.5, 807.0, 555.0, 807.0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -2852,7 +2851,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 39.0, 862.0, 485.75, 862.0, 485.75, 33.0, 571.0, 33.0 ],
+					"midpoints" : [ 39.0, 815.0, 502.75, 815.0, 502.75, 33.0, 571.0, 33.0 ],
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -2874,7 +2873,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 1 ],
-					"midpoints" : [ 710.5, 746.5, 589.5, 746.5 ],
+					"midpoints" : [ 710.5, 709.5, 589.5, 709.5 ],
 					"source" : [ "obj-64", 0 ]
 				}
 
@@ -2882,7 +2881,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-63", 1 ],
-					"midpoints" : [ 857.0, 752.5, 624.0, 752.5 ],
+					"midpoints" : [ 857.0, 715.5, 624.0, 715.5 ],
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -2911,7 +2910,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
-					"midpoints" : [ 659.0, 807.0, 642.25, 807.0, 642.25, 762.0, 578.5, 762.0 ],
+					"midpoints" : [ 659.0, 770.0, 642.25, 770.0, 642.25, 725.0, 578.5, 725.0 ],
 					"order" : 1,
 					"source" : [ "obj-75", 0 ]
 				}
@@ -2920,7 +2919,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
-					"midpoints" : [ 659.0, 807.0, 641.5, 807.0, 641.5, 762.0, 613.0, 762.0 ],
+					"midpoints" : [ 659.0, 770.0, 641.5, 770.0, 641.5, 725.0, 613.0, 725.0 ],
 					"order" : 0,
 					"source" : [ "obj-75", 0 ]
 				}
@@ -2929,7 +2928,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
-					"midpoints" : [ 659.0, 807.0, 642.0, 807.0, 642.0, 762.0, 544.0, 762.0 ],
+					"midpoints" : [ 659.0, 770.0, 642.0, 770.0, 642.0, 725.0, 544.0, 725.0 ],
 					"order" : 2,
 					"source" : [ "obj-75", 0 ]
 				}
@@ -3022,98 +3021,98 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.fakeQTMdata.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master/Examples",
+				"bootpath" : "~/Documents/GitHub/modosc/Examples",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.fakeQTMdata3D.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master/Examples",
+				"bootpath" : "~/Documents/GitHub/modosc/Examples",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.qtm6Deuler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.group.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.velocity.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.acceleration.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.positionLPF.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.centroid.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.setWeights.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.qom.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.boundingBox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.contractionIndex.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.jerk.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.newStaticPoint.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/modosc-master",
+				"bootpath" : "~/Documents/GitHub/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
