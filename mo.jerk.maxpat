@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 874.0, 78.0, 772.0, 938.0 ],
+		"rect" : [ 698.0, 78.0, 948.0, 938.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -142,7 +142,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 18.0, 954.0, 85.0, 22.0 ],
+					"patching_rect" : [ 18.0, 893.0, 85.0, 22.0 ],
 					"text" : "o.select /state"
 				}
 
@@ -193,7 +193,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 115.5, 306.0, 263.0, 46.0 ],
-					"text" : "/state = nfill(3*/Npnts, 0.),\ndelete(/points), delete(/Npnts)",
+					"text" : "/state = nfill(3*/Npnts, 0.),\ndelete(/points)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -319,7 +319,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 18.0, 425.0, 877.0, 453.0 ],
-					"text" : "# Determine whether the points exist in the current bundle\n/addr_in = \"/modosc/points\"+/points+\"/acc\",                           # the list of input addresses we expect\n/addr_out = \"/modosc/points\"+/points+\"/jrk\",                          # the list of addresses for the outputs\n/addr_out2 = \"/modosc/points\"+/points+\"/jrk_mag\",                     # the list of addresses for the outputs\n/process = map(lambda([in], /tmp=value(in), bound(/tmp)), /addr_in),  # test whether each address has data bound to it \n/counter = aseq(0, /Npnts-1),                                         # a list of indeces [0,..,N-1]  \n\n# Define a function which performs the action of this descriptor\n/fnProcess = \"lambda([index],\t\t     # inputs: the name of the point, its index in the list of points\n  /addr_src = /addr_in[[index]],    # the address where we expect to find the input data\n  /addr_res = /addr_out[[index]],   # the address where we will put the result (vector)\n  /addr_res2 = /addr_out2[[index]], # the address where we will put the result (magnitude)\n  /in_data = value(/addr_src),      # the actual input data (acceleration in this case)\n  /idx = (index*3) + [0,1,2],       # indeces into the state vector for this point\n\t  \n  # calc first diff and magnitude, and assign\n  /diff = /in_data - /state[[/idx]],\n  /mag = l2norm(/diff),\n  assign( value(/addr_res), /diff),\n  assign( value(/addr_res2), /mag),\n\n  # update state\n  /state[[/idx]] = /in_data\n)\",\n\n# Apply the processing function using the list of indeces and whether the data are bound, as indicated in /process \nmap(lambda([body_idx,process], if(process, apply(readstring(/fnProcess), body_idx))), /counter, /process),\n\n# Delete all the addresses we defined\ndelete(/addr_in), delete(/addr_out), delete(/process), delete(/counter), delete(/tmp),\ndelete(/addr_src), delete(/addr_res), delete(/in_data), delete(/idx), delete(/diff), delete(/mag), delete(/tmp_data),\ndelete(/fnProcess), delete(/points), delete(/addr_res2), delete(/addr_out2)",
+					"text" : "# Determine whether the points exist in the current bundle\n/addr_in = \"/modosc/points\"+/points+\"/acc\",                           # the list of input addresses we expect\n/addr_out = \"/modosc/points\"+/points+\"/jrk\",                          # the list of addresses for the outputs\n/addr_out2 = \"/modosc/points\"+/points+\"/jrk_mag\",                     # the list of addresses for the outputs\n/process = map(lambda([in], /tmp=value(in), bound(/tmp)), /addr_in),  # test whether each address has data bound to it \n/counter = aseq(0, /Npnts-1),                                         # a list of indeces [0,..,N-1]  \n\n# Define a function which performs the action of this descriptor\n/fnProcess = \"lambda([index],\t\t     # inputs: the name of the point, its index in the list of points\n  /addr_src = /addr_in[[index]],    # the address where we expect to find the input data\n  /addr_res = /addr_out[[index]],   # the address where we will put the result (vector)\n  /addr_res2 = /addr_out2[[index]], # the address where we will put the result (magnitude)\n  /in_data = value(/addr_src),      # the actual input data (acceleration in this case)\n  /idx = (index*3) + [0,1,2],       # indeces into the state vector for this point\n\t  \n  # calc first diff and magnitude, and assign\n  /diff = /in_data - /state[[/idx]],\n  /mag = l2norm(/diff),\n  assign( value(/addr_res), /diff),\n  assign( value(/addr_res2), /mag),\n\n  # update state\n  /state[[/idx]] = /in_data\n)\",\n\n# Apply the processing function using the list of indeces and whether the data are bound, as indicated in /process \nmap(lambda([body_idx,process], if(process, apply(readstring(/fnProcess), body_idx))), /counter, /process),\n\n# Delete all the addresses we defined\ndelete(/addr_in), delete(/addr_out), delete(/process), delete(/counter), delete(/tmp),\ndelete(/addr_src), delete(/addr_res), delete(/in_data), delete(/idx), delete(/diff), delete(/mag), delete(/tmp_data),\ndelete(/fnProcess), delete(/points), delete(/addr_res2), delete(/addr_out2), delete(/Npnts)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -344,7 +344,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 1026.0, 30.0, 30.0 ]
+					"patching_rect" : [ 84.0, 959.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -490,7 +490,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-86", 1 ],
-					"midpoints" : [ 27.5, 991.0, 911.0, 991.0, 911.0, 409.0, 158.0, 409.0, 158.0, 361.0, 125.0, 361.0 ],
+					"midpoints" : [ 27.5, 935.0, 911.0, 935.0, 911.0, 409.0, 158.0, 409.0, 158.0, 361.0, 125.0, 361.0 ],
 					"source" : [ "obj-93", 0 ]
 				}
 
