@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 78.0, 927.0, 852.0 ],
+		"rect" : [ 315.0, 78.0, 912.0, 838.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,7 +59,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 17.0, 739.32958984375, 299.0, 22.0 ],
+					"patching_rect" : [ 17.0, 739.32958984375, 237.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -74,7 +74,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 80.0, 558.32958984375, 174.0, 114.0 ],
+					"patching_rect" : [ 80.0, 558.32958984375, 187.000030517578125, 114.0 ],
 					"text" : "delete(/analog_in),\ndelete(/args),\ndelete(/process),\ndelete(/processLen),\ndelete(/processEven),\ndelete(/addr_out),\ndelete(/count)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -90,8 +90,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 80.0, 477.57958984375, 755.0, 60.0 ],
-					"text" : "/addr_out = \"/modosc/signals\",\n/count = aseq(0,length(/args)-1,2),\nmap(lambda([counter],assign(/addr_out+/args[[counter+1]],/analog_in[[/args[[counter]]]])),/count)",
+					"patching_rect" : [ 80.0, 477.57958984375, 770.0, 61.0 ],
+					"text" : "/addr_out = \"/modosc/signals\",\n/count = aseq(0,length(/args)-1,2),\nmap(lambda([counter],assign(/addr_out+/args[[counter+1]]+\"/data\",/analog_in[[/args[[counter]]]])),/count)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -103,7 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 80.0, 447.57958984375, 778.0, 22.0 ],
+					"patching_rect" : [ 80.0, 447.57958984375, 787.0, 22.0 ],
 					"text" : "o.if /process && /processLen && /processEven == true"
 				}
 
@@ -214,7 +214,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 80.0, 367.32958984375, 755.0, 73.0 ],
+					"patching_rect" : [ 80.0, 367.32958984375, 770.0, 72.0 ],
 					"text" : "# Determine whether inputs exist and is valid\n/process = bound(/analog_in), #check if input exists\n/processLen = length(/analog_in)*2 > length(/args), #check if there are enough channels in /analog_in\n/processEven = mod(length(/args),2)==0 #check if number of arguments is even",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -351,7 +351,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 52.764816284179688, 755.20001220703125, 94.0 ],
-					"text" : "Creates new signals from one or more QTM analog board channels. \nExample: [mo.qtmSig 1 /emg1 3 /imu3 @deviceID 2] binds the data from channels 1 and 3 to /modosc/signals/emg1 and modosc/signals/imu3 respectively. Use the optional attribute @deviceID followed by an integer to select which analog board to use (default is 1).\n(Note: to start analog board data streaming synced with motion capture send the message \"StreamFrames AllFrames AnalogSingle\" to QTM via OSC)"
+					"text" : "Creates new signals from one or more QTM analog board channels. \nExample: [mo.qtmSig 1 /emg1 3 /imu3 @deviceID 2] binds the data from channels 1 and 3 to /modosc/signals/emg1/data and modosc/signals/imu3/data respectively. Use the optional attribute @deviceID followed by an integer to select which analog board to use (default is 1).\n(Note: to start analog board data streaming synced with motion capture send the message \"StreamFrames AllFrames AnalogSingle\" to QTM via OSC)"
 				}
 
 			}
@@ -424,7 +424,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"midpoints" : [ 848.5, 548.454605102539062, 89.5, 548.454605102539062 ],
+					"midpoints" : [ 857.5, 548.454605102539062, 89.5, 548.454605102539062 ],
 					"source" : [ "obj-22", 1 ]
 				}
 
@@ -448,7 +448,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
-					"midpoints" : [ 89.5, 681.82958984375, 306.5, 681.82958984375 ],
+					"midpoints" : [ 89.5, 681.82958984375, 244.5, 681.82958984375 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -506,8 +506,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
