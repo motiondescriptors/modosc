@@ -701,7 +701,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 17.999984741210938, 501.5999755859375, 664.4000244140625, 141.0 ],
-					"text" : "# calculate and assign tkeo\nassign(/addr_in + \"/tkeoV2\", \npow(/buf1/data[[/buf1/lag-1]],2) - (/buf1/data[[/buf1/lag*2-1]]*value(/addr_in+\"/data\"))),\n\n# manage the buffer\n/buf1/indices = aseq(1, length(/buf1/data)-1),\nassign_to_index(/buf1/data,/buf1/indices,/buf1/data),\n\n/buf1/data[[0]] = value(/addr_in+\"/data\")",
+					"text" : "# calculate and assign tkeo\nassign(/addr_in + \"/tkeo\", \npow(/buf1/data[[/buf1/lag-1]],2) - (/buf1/data[[/buf1/lag*2-1]]*value(/addr_in+\"/data\"))),\n\n# manage the buffer\n/buf1/indices = aseq(1, length(/buf1/data)-1),\nassign_to_index(/buf1/data,/buf1/indices,/buf1/data),\n\n/buf1/data[[0]] = value(/addr_in+\"/data\")",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -921,8 +921,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -985,8 +985,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
