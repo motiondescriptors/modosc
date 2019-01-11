@@ -4,11 +4,11 @@ modosc is a set of Max abstractions designed for computing motion descriptors fr
 
 VIDEO TUTORIALS: https://www.youtube.com/playlist?list=PLMrDazzs9wCQET95Mel3v_Ujmq0uP7XCT
 
-Requires o.dot externals. The official o.dot releases can be found here: http://cnmat.berkeley.edu/downloads. However if you are running Windows in 64-bit more you will need a more recent beta release from the o.dot github page here: https://github.com/CNMAT/CNMAT-odot/releases 
+Using Modosc requires o.dot externals. The official o.dot releases can be found here: http://cnmat.berkeley.edu/downloads. However if you are running Windows in 64-bit more you will need a more recent beta release from the o.dot github page here: https://github.com/CNMAT/CNMAT-odot/releases 
 
 More details can be found in the wiki: https://github.com/motiondescriptors/modosc/wiki 
 
-For more information see the following two papers on the initial release of Modosc. See the paper included in the repository (modosc_NIME_2018.pdf) for more information.
+For more information see the following two papers on the initial release of Modosc:
 
 F. Visi and L. Dahl, “Real-Time Motion Capture Analysis and Music Interaction with the Modosc Descriptor Library,” in NIME’18 – International Conference on New Interfaces for Musical Expression, 2018. (This paper is included in the repository as modosc_NIME_2018.pdf.)
 
