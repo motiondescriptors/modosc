@@ -6,7 +6,7 @@ VIDEO TUTORIALS: https://www.youtube.com/playlist?list=PLMrDazzs9wCQET95Mel3v_Uj
 
 Using modosc requires the o.dot externals for Max. The official o.dot releases can be found here: http://cnmat.berkeley.edu/downloads. However if you are running Windows in 64-bit mode you will need a more recent beta release from the o.dot github page here: https://github.com/CNMAT/CNMAT-odot/releases 
 
-More details can be found in the wiki: https://github.com/motiondescriptors/modosc/wiki 
+Details can be found in the wiki: https://github.com/motiondescriptors/modosc/wiki 
 
 For more information see the following two papers on the initial release of Modosc:
 
