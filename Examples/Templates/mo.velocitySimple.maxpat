@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 6,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 340.0, 92.0, 956.0, 746.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 340.0, 92.0, 1031.0, 883.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +45,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
 					"patching_rect" : [ 17.0, 725.0, 85.0, 22.0 ],
-					"style" : "",
 					"text" : "o.select /state"
 				}
 
@@ -56,7 +56,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 145.0, 142.0, 281.0, 20.0 ],
-					"style" : "",
 					"text" : "Init a new state vector when /points list is redefined"
 				}
 
@@ -69,7 +68,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 17.0, 244.5, 50.0, 22.0 ],
-					"style" : "",
 					"text" : "o.union"
 				}
 
@@ -82,7 +80,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 17.0, 203.0, 30.0, 22.0 ],
-					"style" : "",
 					"text" : "t l b"
 				}
 
@@ -98,8 +95,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 114.5, 167.0, 263.0, 49.0 ],
-					"text" : "/state = nfill(3*/Npnts, 0.),\ndelete(/points), delete('Npnts)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/state = nfill(3*/Npnts, 0.),\ndelete(/points), delete('Npnts)"
 				}
 
 			}
@@ -110,8 +106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 104.0, 135.723282, 29.5, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 104.0, 135.723282000000012, 29.5, 22.0 ],
 					"text" : "t l l"
 				}
 
@@ -124,7 +119,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 96.5, 228.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "o.var"
 				}
 
@@ -138,22 +132,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 104.0, 97.607986, 215.0, 32.0 ],
-					"text" : "/Npnts = length(/points)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 519.0, 117.883301, 216.0, 33.0 ],
-					"style" : "",
-					"text" : "THIS PATCH seems to be working but needs more testing"
+					"patching_rect" : [ 104.0, 97.607985999999997, 215.0, 32.0 ],
+					"text" : "/Npnts = length(/points)"
 				}
 
 			}
@@ -163,8 +143,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 264.0, 8.866699, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 264.0, 8.866699000000001, 150.0, 20.0 ],
 					"text" : "input for list of bodies"
 				}
 
@@ -178,8 +157,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 214.0, 8.866699, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 214.0, 8.866699000000001, 30.0, 30.0 ]
 				}
 
 			}
@@ -190,8 +168,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 104.0, 38.447128, 74.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 104.0, 38.447127999999999, 74.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -203,8 +180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 104.0, 8.866699, 60.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 104.0, 8.866699000000001, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -216,8 +192,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 104.0, 68.027557, 85.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 104.0, 68.027557000000002, 85.0, 22.0 ],
 					"text" : "o.pack /points"
 				}
 
@@ -233,8 +208,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 17.0, 286.0, 879.0, 426.0 ],
-					"text" : "# Determine whether the points exist in the current bundle\n/addr_in = \"/modosc/points\"+/points+\"/pos_xyz\",                       # the list of addresses we expect in the bundle\n/addr_out = \"/modosc/points\"+/points+\"/vel_xyzm\",                     # the list of addresses for the outputs\n/process = map(lambda([in], /tmp=value(in), bound(/tmp)), /addr_in),  # test whether each address has data bound to it \n/counter = aseq(0, /Npnts-1),                                         # a list of indeces [0,..,N-1]  \n\n# Define a function which performs the action of this descriptor\n/fnProcess = \"lambda([index],\t\t    # inputs: the name of the point, its index in the list of points\n  /addr_src = /addr_in[[index]],   # the address where we expect to find the input data\n  /addr_res = /addr_out[[index]],  # the address where we will put the result\n  /in_data = value(/addr_src),     # the actual input data (position in this case)\n  /idx = (index*3) + [0,1,2],      # indeces into the state vector for this point\n\t  \n  # calc first diff and magnitude, and assign\n  /diff = /in_data - /state[[/idx]],\n  /vel = l2norm(/diff),\n  /tmp_data = [/diff, /vel],\n  assign( value(/addr_res), /tmp_data),\n\n  # update state\n  /state[[/idx]] = /in_data\n)\",\n\n# Apply the processing function using the list of indeces and whether the data are bound, as indicated in /process \nmap(lambda([body_idx,process], if(process, apply(readstring(/fnProcess), body_idx))), /counter, /process),\n\n# Delete all the addresses we defined\ndelete(/addr_in), delete(/addr_out), delete(/process), delete(/counter), delete(/tmp),\ndelete(/addr_src), delete(/addr_res), delete(/in_data), delete(/idx), delete(/diff), delete(/vel), delete(/tmp_data),\ndelete(/fnProcess), delete(/points), delete(/Npnts)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "# Determine whether the points exist in the current bundle\n/addr_in = \"/modosc/points\"+/points+\"/pos_xyz\",                       # the list of addresses we expect in the bundle\n/addr_out = \"/modosc/points\"+/points+\"/vel_xyzm\",                     # the list of addresses for the outputs\n/process = map(lambda([in], /tmp=value(in), bound(/tmp)), /addr_in),  # test whether each address has data bound to it \n/counter = aseq(0, /Npnts-1),                                         # a list of indeces [0,..,N-1]  \n\n# Define a function which performs the action of this descriptor\n/fnProcess = \"lambda([index],\t\t    # inputs: the name of the point, its index in the list of points\n  /addr_src = /addr_in[[index]],   # the address where we expect to find the input data\n  /addr_res = /addr_out[[index]],  # the address where we will put the result\n  /in_data = value(/addr_src),     # the actual input data (position in this case)\n  /idx = (index*3) + [0,1,2],      # indeces into the state vector for this point\n\t  \n  # calc first diff and magnitude, and assign\n  /diff = /in_data - /state[[/idx]],\n  /vel = l2norm(/diff),\n  /tmp_data = [/diff, /vel],\n  assign( value(/addr_res), /tmp_data),\n\n  # update state\n  /state[[/idx]] = /in_data\n)\",\n\n# Apply the processing function using the list of indeces and whether the data are bound, as indicated in /process \nmap(lambda([body_idx,process], if(process, apply(readstring(/fnProcess), body_idx))), /counter, /process),\n\n# Delete all the addresses we defined\ndelete(/addr_in), delete(/addr_out), delete(/process), delete(/counter), delete(/tmp),\ndelete(/addr_src), delete(/addr_res), delete(/in_data), delete(/idx), delete(/diff), delete(/vel), delete(/tmp_data),\ndelete(/fnProcess), delete(/points), delete(/Npnts)"
 				}
 
 			}
@@ -246,7 +220,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 17.0, 173.0, 50.0, 22.0 ],
-					"style" : "",
 					"text" : "o.union"
 				}
 
@@ -254,12 +227,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 513.0, 35.75, 450.0, 20.0 ],
-					"style" : "",
-					"text" : "This patch calculates velocity for a list of points"
+					"patching_rect" : [ 513.0, 35.75, 450.0, 167.0 ],
+					"text" : "This is an example patch which you may find useful if you decide to code your own point feature for modosc.\n\nThis patch calculates velocity for a list of points. It does this by calculating the difference between the current position, and the position from the previous time-frame (for each point in the input  list of points.)  The previous positions are stored in a variable called /state, which is help in the o.var object between each time frame.\n\nNote: mo.velocity calculates the velocity using a different technique. This patch is just mean as an example of how to deal with various issues if you were creating your own mo.feature!"
 				}
 
 			}
@@ -271,8 +244,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 797.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 83.0, 797.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -285,8 +257,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 10.866699, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 17.0, 10.866699000000001, 30.0, 30.0 ]
 				}
 
 			}
@@ -315,7 +286,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
-					"midpoints" : [ 113.5, 164.861633, 57.5, 164.861633 ],
+					"midpoints" : [ 113.5, 164.861633000000012, 57.5, 164.861633000000012 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -373,7 +344,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"midpoints" : [ 223.5, 64.43335, 113.5, 64.43335 ],
+					"midpoints" : [ 223.5, 64.433350000000004, 113.5, 64.433350000000004 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -441,8 +412,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -496,8 +467,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -515,8 +486,8 @@
 , 			{
 				"name" : "scope~001",
 				"default" : 				{
-					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ],
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
