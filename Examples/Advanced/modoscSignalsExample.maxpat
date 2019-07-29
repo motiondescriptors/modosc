@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1719.0, 78.0, 839.0, 656.0 ],
+		"rect" : [ 225.0, 84.0, 1020.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,124 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 49.0, 124.0, 150.0, 20.0 ],
+					"text" : "Data from QTM"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"fontsize" : 13.0,
+					"id" : "obj-236",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 540.0, 38.866698999999997, 289.0, 21.0 ],
+					"text" : "https://github.com/motiondescriptors/modosc",
+					"textjustification" : 0,
+					"textoncolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"underline" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 9.0,
+					"hidden" : 1,
+					"id" : "obj-235",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 811.5, 64.764816284179688, 114.0, 30.0 ],
+					"presentation_linecount" : 2,
+					"text" : ";\rmax launchbrowser $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-19",
+					"maxclass" : "comment",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 540.0, 19.866698999999997, 264.0, 36.0 ],
+					"suppressinlet" : 1,
+					"text" : "modosc: motion descriptors library\n",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 3,
+					"fontsize" : 30.0,
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 57.0, 19.86669921875, 490.4000244140625, 40.0 ],
+					"presentation_linecount" : 2,
+					"suppressinlet" : 1,
+					"text" : "modosc Signals Example Patch",
+					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"grad1" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"grad2" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"id" : "obj-25",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 49.0, 19.866698999999997, 480.0, 40.000000218750003 ],
+					"proportion" : 0.673267,
+					"pt1" : [ -0.00495, 0.556522 ],
+					"pt2" : [ 1.173267, 0.556522 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-26",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 49.0, 64.764816284179688, 755.20001220703125, 50.0 ],
+					"presentation_linecount" : 3,
+					"text" : "This patch shows how to get and process signals from one or more QTM analog board channels. \n(Note: to start analog board data streaming synced with motion capture send the message \"StreamFrames AllFrames AnalogSingle\" to QTM via OSC)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 408.0, 13.99169921875, 201.0, 20.0 ],
-					"text" : "Switch on to generate fake signals"
+					"patching_rect" : [ 385.4000244140625, 124.0, 228.0, 20.0 ],
+					"text" : "Switch this on to generate fake signals"
 				}
 
 			}
@@ -55,7 +167,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 644.0, 296.0, 84.0, 22.0 ],
+					"patching_rect" : [ 658.0, 431.0, 84.0, 22.0 ],
 					"text" : "loadmess 180"
 				}
 
@@ -67,7 +179,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 35.0, 132.25, 157.0, 22.0 ],
+					"patching_rect" : [ 49.0, 267.25, 157.0, 22.0 ],
 					"text" : "mo.tkeo /emg1Copy @lag 5"
 				}
 
@@ -79,7 +191,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 35.0, 326.5, 29.5, 22.0 ],
+					"patching_rect" : [ 49.0, 461.5, 29.5, 22.0 ],
 					"text" : "* 5."
 				}
 
@@ -90,7 +202,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 393.4000244140625, 355.0, 19.0, 20.0 ],
+					"patching_rect" : [ 407.4000244140625, 490.0, 19.0, 20.0 ],
 					"text" : "R"
 				}
 
@@ -101,7 +213,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 221.0, 355.0, 19.0, 20.0 ],
+					"patching_rect" : [ 235.0, 490.0, 19.0, 20.0 ],
 					"text" : "G"
 				}
 
@@ -112,7 +224,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 54.0, 355.0, 19.0, 20.0 ],
+					"patching_rect" : [ 68.0, 490.0, 19.0, 20.0 ],
 					"text" : "B"
 				}
 
@@ -124,7 +236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 35.0, 106.25, 88.0, 22.0 ],
+					"patching_rect" : [ 49.0, 241.25, 88.0, 22.0 ],
 					"text" : "mo.tkeo /emg1"
 				}
 
@@ -136,7 +248,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 35.0, 158.125, 153.0, 22.0 ],
+					"patching_rect" : [ 49.0, 293.125, 153.0, 22.0 ],
 					"text" : "mo.zcr /emg2 @bufSize 13"
 				}
 
@@ -150,9 +262,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 371.4000244140625, 120.25, 421.0, 34.0 ],
-					"text" : "/analog_single : [1, 1, 5, 3., 5.4, -0.8, 0.4, 6.]",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 385.4000244140625, 255.25, 421.0, 34.0 ],
+					"text" : "/analog_single : [1, 1, 5, 7., 0.8, 9.8, 0.6, 3.8]"
 				}
 
 			}
@@ -168,7 +279,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -436,7 +547,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 371.4000244140625, 72.32501220703125, 162.0, 22.0 ],
+					"patching_rect" : [ 385.4000244140625, 207.32501220703125, 162.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -456,7 +567,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 371.4000244140625, 13.99169921875, 24.0, 24.0 ]
+					"patching_rect" : [ 385.4000244140625, 148.99169921875, 24.0, 24.0 ]
 				}
 
 			}
@@ -467,7 +578,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 371.4000244140625, 44.725006103515625, 63.0, 22.0 ],
+					"patching_rect" : [ 385.4000244140625, 179.725006103515625, 63.0, 22.0 ],
 					"text" : "metro 100"
 				}
 
@@ -479,7 +590,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3.5, 353.0, 35.0, 22.0 ],
+					"patching_rect" : [ 17.5, 488.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -496,7 +607,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -783,7 +894,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 647.0, 417.0, 44.0, 22.0 ],
+					"patching_rect" : [ 661.0, 552.0, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -802,7 +913,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 35.0, 79.25, 234.0, 22.0 ],
+					"patching_rect" : [ 49.0, 214.25, 234.0, 22.0 ],
 					"text" : "mo.qtmSig 1 /emg1 2 /emg2 1 /emg1Copy"
 				}
 
@@ -817,7 +928,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 647.0, 454.0, 185.0, 17.0 ]
+					"patching_rect" : [ 661.0, 589.0, 185.0, 17.0 ]
 				}
 
 			}
@@ -827,7 +938,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 647.0, 490.0, 45.0, 45.0 ]
+					"patching_rect" : [ 661.0, 625.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -837,7 +948,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 702.9000244140625, 320.0, 48.0, 20.0 ],
+					"patching_rect" : [ 716.9000244140625, 455.0, 48.0, 20.0 ],
 					"text" : "zoom"
 				}
 
@@ -854,7 +965,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -974,7 +1085,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2034,7 +2145,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 35.0, 377.0, 656.0, 22.0 ],
+					"patching_rect" : [ 49.0, 512.0, 656.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2054,7 +2165,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 644.0, 320.0, 50.0, 22.0 ]
+					"patching_rect" : [ 658.0, 455.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -2065,7 +2176,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "FullPacket" ],
-					"patching_rect" : [ 36.0, 291.0, 521.0, 22.0 ],
+					"patching_rect" : [ 50.0, 426.0, 521.0, 22.0 ],
 					"text" : "o.route /modosc/signals/emg1/data /modosc/signals/emg1/tkeo /modosc/signals/emg1Copy/tkeo"
 				}
 
@@ -2076,7 +2187,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 574.5, 320.0, 63.0, 20.0 ],
+					"patching_rect" : [ 588.5, 455.0, 63.0, 20.0 ],
 					"text" : "plot on/off"
 				}
 
@@ -2089,7 +2200,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 547.0, 320.0, 24.0, 24.0 ]
+					"patching_rect" : [ 561.0, 455.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2100,7 +2211,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "list", "int", "" ],
-					"patching_rect" : [ 35.0, 417.0, 600.0, 200.0 ]
+					"patching_rect" : [ 49.0, 552.0, 600.0, 200.0 ]
 				}
 
 			}
@@ -2111,7 +2222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 35.0, 44.725006103515625, 73.0, 22.0 ],
+					"patching_rect" : [ 49.0, 179.725006103515625, 73.0, 22.0 ],
 					"text" : "o.route /qtm"
 				}
 
@@ -2126,9 +2237,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 184.0, 520.800048828125, 102.0 ],
-					"text" : "/modosc/signals/emg1/data : 3.,\n/modosc/signals/emg2/data : 5.4,\n/modosc/signals/emg1Copy/data : 3.,\n/modosc/signals/emg1/tkeo : 6.,\n/modosc/signals/emg1Copy/tkeo : 18.4,\n/modosc/signals/emg2/zcr : 0.461538",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 50.0, 319.0, 520.800048828125, 102.0 ],
+					"text" : "/modosc/signals/emg1/data : 7.,\n/modosc/signals/emg2/data : 2.6,\n/modosc/signals/emg1Copy/data : 7.,\n/modosc/signals/emg1/tkeo : 7.16,\n/modosc/signals/emg1Copy/tkeo : 17.24,\n/modosc/signals/emg2/zcr : 0.0769231"
 				}
 
 			}
@@ -2139,7 +2249,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 19.0, 161.0, 22.0 ],
+					"patching_rect" : [ 49.0, 149.99169921875, 161.0, 22.0 ],
 					"text" : "udpreceive 45454 CNMAT"
 				}
 
@@ -2184,6 +2294,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-235", 0 ],
+					"hidden" : 1,
+					"midpoints" : [ 684.5, 60.93334999999999, 821.0, 60.93334999999999 ],
+					"source" : [ "obj-236", 1 ]
 				}
 
 			}
@@ -2294,7 +2413,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
-					"midpoints" : [ 380.9000244140625, 107.32501220703125, 353.70001220703125, 107.32501220703125, 353.70001220703125, 75.25, 44.5, 75.25 ],
+					"midpoints" : [ 394.9000244140625, 242.32501220703125, 367.70001220703125, 242.32501220703125, 367.70001220703125, 208.25, 58.5, 208.25 ],
 					"order" : 1,
 					"source" : [ "obj-60", 0 ]
 				}
@@ -2332,28 +2451,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mo.qtmSig.maxpat",
-				"bootpath" : "~/Documents/GitHub/modosc",
+				"bootpath" : "~/Documents/GitHub/Max/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randrunk.maxpat",
-				"bootpath" : "~/Documents/GitHub/modosc/Examples",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/Max/modosc/Examples/Dependencies",
+				"patcherrelativepath" : "./Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.zcr.maxpat",
-				"bootpath" : "~/Documents/GitHub/modosc",
+				"bootpath" : "~/Documents/GitHub/Max/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mo.tkeo.maxpat",
-				"bootpath" : "~/Documents/GitHub/modosc",
+				"bootpath" : "~/Documents/GitHub/Max/modosc",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2399,8 +2518,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
