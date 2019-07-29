@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 1612.0, 938.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 34.0, 79.0, 1255.0, 1202.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,8 +48,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 508.0, 26.866699, 289.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 508.0, 26.866699000000001, 289.0, 21.0 ],
 					"text" : "https://github.com/motiondescriptors/modosc",
 					"textjustification" : 0,
 					"textoncolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
@@ -67,8 +67,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 779.5, 52.764816, 114.0, 30.0 ],
-					"style" : "",
+					"patching_rect" : [ 779.5, 52.764816000000003, 114.0, 30.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -82,8 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 508.0, 7.866699, 264.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 508.0, 7.866699, 264.0, 36.0 ],
 					"suppressinlet" : 1,
 					"text" : "modosc: motion descriptors library\n",
 					"textjustification" : 2
@@ -99,10 +97,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.0, 7.866699, 320.0, 40.0 ],
-					"style" : "",
 					"suppressinlet" : 1,
 					"text" : "mo.contractionIndex",
-					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+					"textcolor" : [ 0.862744987010956, 0.870588004589081, 0.878431022167206, 1.0 ]
 				}
 
 			}
@@ -119,8 +116,7 @@
 					"patching_rect" : [ 17.0, 7.866699, 359.0, 40.0 ],
 					"proportion" : 0.673267,
 					"pt1" : [ -0.00495, 0.556522 ],
-					"pt2" : [ 1.173267, 0.556522 ],
-					"style" : ""
+					"pt2" : [ 1.173267, 0.556522 ]
 				}
 
 			}
@@ -134,8 +130,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 52.764816, 755.0, 65.0 ],
-					"style" : "",
+					"patching_rect" : [ 17.0, 52.764816000000003, 755.0, 65.0 ],
 					"text" : "Group descriptor. Takes a group name as argument and calculates the contraction index of the points in the group. Contraction index is calculated by summing the Euclidean distances of each point in a group from the group’s centroid. It is an indicator of the overall contraction or expansion of a group of points. Example: [mo.contractionIndex group_name] computes the contraction index of group_name and stores it in /modosc/groups/group_name/ci: f."
 				}
 
@@ -148,7 +143,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 641.0, 753.0, 150.0, 47.0 ],
-					"style" : "",
 					"text" : "TODO: Oops, I forgot we don't store the centroid with the group!"
 				}
 
@@ -160,8 +154,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 764.0, 131.866699, 156.0, 60.0 ],
-					"style" : "",
+					"patching_rect" : [ 764.0, 131.866699000000011, 156.0, 60.0 ],
 					"text" : "TODO: add functionality to record  MIN_DIST(i) and use in calculating CI (Fenza et al)"
 				}
 
@@ -174,7 +167,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 641.0, 702.0, 150.0, 33.0 ],
-					"style" : "",
 					"text" : "Calculate the centroid of the points in the group"
 				}
 
@@ -203,7 +195,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 666.0, 613.0, 22.0 ],
-					"style" : "",
 					"text" : "o.if /cntrdBnd == false"
 				}
 
@@ -216,7 +207,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 649.0, 584.0, 150.0, 33.0 ],
-					"style" : "",
 					"text" : "Has the centroid already been calculated?"
 				}
 
@@ -246,8 +236,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 167.0, 127.286255, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 167.0, 127.286254999999997, 30.0, 30.0 ]
 				}
 
 			}
@@ -258,8 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 67.0, 156.866699, 74.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 67.0, 156.866699000000011, 74.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -271,8 +259,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 67.0, 127.286255, 60.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 67.0, 127.286254999999997, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -285,7 +272,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 920.0, 587.0, 160.0, 33.0 ],
-					"style" : "",
 					"text" : "Delete addresses we made in the previous stage"
 				}
 
@@ -298,7 +284,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 910.0, 412.0, 160.0, 33.0 ],
-					"style" : "",
 					"text" : "Delete addresses we made in the previous stage"
 				}
 
@@ -310,8 +295,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 440.5, 131.866699, 305.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 440.5, 131.866699000000011, 305.0, 33.0 ],
 					"text" : "Status: Minimally tested on fake data. Needs testing w real data."
 				}
 
@@ -322,8 +306,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 209.0, 131.866699, 224.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 209.0, 131.866699000000011, 224.0, 20.0 ],
 					"text" : "the address of the group eg /mygroup1"
 				}
 
@@ -336,7 +319,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 67.0, 187.0, 76.0, 22.0 ],
-					"style" : "",
 					"text" : "o.pack /args"
 				}
 
@@ -349,7 +331,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 760.0, 908.0, 91.0, 60.0 ],
-					"style" : "",
 					"text" : "Calc CI, add to new address, and delete temp vars"
 				}
 
@@ -378,7 +359,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 538.0, 117.0, 22.0 ],
-					"style" : "",
 					"text" : "o.if /process == true"
 				}
 
@@ -391,7 +371,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 641.0, 415.0, 154.0, 47.0 ],
-					"style" : "",
 					"text" : "Do all the points in the list exist and have position data?"
 				}
 
@@ -436,7 +415,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 84.0, 231.0, 284.0, 33.0 ],
-					"style" : "",
 					"text" : "Does the group name exist, and is there data in /groupName/points?"
 				}
 
@@ -449,7 +427,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 365.0, 117.0, 22.0 ],
-					"style" : "",
 					"text" : "o.if /process == true"
 				}
 
@@ -494,7 +471,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 20.5, 231.0, 50.0, 22.0 ],
-					"style" : "",
 					"text" : "o.union"
 				}
 
@@ -507,8 +483,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 1146.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 20.5, 1146.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -521,8 +496,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.5, 123.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 20.5, 123.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -530,7 +504,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 176.5, 182.643127, 76.5, 182.643127 ],
+					"midpoints" : [ 176.5, 182.643126999999993, 76.5, 182.643126999999993 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -605,7 +579,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-235", 0 ],
 					"hidden" : 1,
-					"midpoints" : [ 652.5, 48.93335, 789.0, 48.93335 ],
+					"midpoints" : [ 652.5, 48.933349999999997, 789.0, 48.933349999999997 ],
 					"source" : [ "obj-236", 1 ]
 				}
 
@@ -697,8 +671,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -761,8 +735,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
