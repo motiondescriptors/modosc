@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 2,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 698.0, 78.0, 948.0, 938.0 ],
+		"rect" : [ 654.0, 79.0, 948.0, 938.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -126,12 +126,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-10",
-					"linecount" : 5,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 52.764816000000003, 755.0, 79.0 ],
-					"text" : "Single point decsriptor. This decriptor calculates the jerk (vector and magnitude) for a list of points. mo.acceleration should be calculated upstream for these points, as mo.jerk requires them for input. Example: [mo.jerk /Hand] computes the jerk of the point /Hand and outputs the jerk vector to /modosc/points/Hand/jrk and the magnitude to /modosc/points/Hand/jrk_mag.\nNote: this calculation is simply the first difference of acceleration. If the outcome is too \"jumpy\" you may want to increase the amount of filtering in mo.acceleration."
+					"patching_rect" : [ 17.0, 52.764816000000003, 755.0, 94.0 ],
+					"text" : "Single point decsriptor. This decriptor calculates the jerk (vector and magnitude) for a list of points. If working with markers, mo.acceleration should be calculated upstream for these points, as mo.jerk requires them for input. Works with also with IMUs (e.g. see [mo.imu.hfmt]). Example: [mo.jerk /Hand] computes the jerk of the point /Hand and outputs the jerk vector to /modosc/points/Hand/jrk and the magnitude to /modosc/points/Hand/jrk_mag.\nNote: this calculation is simply the first difference of acceleration. If the outcome is too \"jumpy\" you may want to increase the amount of filtering in mo.acceleration."
 				}
 
 			}
@@ -193,8 +193,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 115.5, 306.0, 263.0, 46.0 ],
-					"text" : "/state = nfill(3*/Npnts, 0.),\ndelete(/points)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/state = nfill(3*/Npnts, 0.),\ndelete(/points)"
 				}
 
 			}
@@ -232,8 +231,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 105.0, 236.607986000000011, 215.0, 32.0 ],
-					"text" : "/Npnts = length(/points)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/Npnts = length(/points)"
 				}
 
 			}
@@ -263,7 +261,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -319,8 +317,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 18.0, 425.0, 877.0, 453.0 ],
-					"text" : "# Determine whether the points exist in the current bundle\n/addr_in = \"/modosc/points\"+/points+\"/acc\",                           # the list of input addresses we expect\n/addr_out = \"/modosc/points\"+/points+\"/jrk\",                          # the list of addresses for the outputs\n/addr_out2 = \"/modosc/points\"+/points+\"/jrk_mag\",                     # the list of addresses for the outputs\n/process = map(lambda([in], /tmp=value(in), bound(/tmp)), /addr_in),  # test whether each address has data bound to it \n/counter = aseq(0, /Npnts-1),                                         # a list of indeces [0,..,N-1]  \n\n# Define a function which performs the action of this descriptor\n/fnProcess = \"lambda([index],\t\t     # inputs: the name of the point, its index in the list of points\n  /addr_src = /addr_in[[index]],    # the address where we expect to find the input data\n  /addr_res = /addr_out[[index]],   # the address where we will put the result (vector)\n  /addr_res2 = /addr_out2[[index]], # the address where we will put the result (magnitude)\n  /in_data = value(/addr_src),      # the actual input data (acceleration in this case)\n  /idx = (index*3) + [0,1,2],       # indeces into the state vector for this point\n\t  \n  # calc first diff and magnitude, and assign\n  /diff = /in_data - /state[[/idx]],\n  /mag = l2norm(/diff),\n  assign( value(/addr_res), /diff),\n  assign( value(/addr_res2), /mag),\n\n  # update state\n  /state[[/idx]] = /in_data\n)\",\n\n# Apply the processing function using the list of indeces and whether the data are bound, as indicated in /process \nmap(lambda([body_idx,process], if(process, apply(readstring(/fnProcess), body_idx))), /counter, /process),\n\n# Delete all the addresses we defined\ndelete(/addr_in), delete(/addr_out), delete(/process), delete(/counter), delete(/tmp),\ndelete(/addr_src), delete(/addr_res), delete(/in_data), delete(/idx), delete(/diff), delete(/mag), delete(/tmp_data),\ndelete(/fnProcess), delete(/points), delete(/addr_res2), delete(/addr_out2), delete(/Npnts)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "# Determine whether the points exist in the current bundle\n/addr_in = \"/modosc/points\"+/points+\"/acc\",                           # the list of input addresses we expect\n/addr_out = \"/modosc/points\"+/points+\"/jrk\",                          # the list of addresses for the outputs\n/addr_out2 = \"/modosc/points\"+/points+\"/jrk_mag\",                     # the list of addresses for the outputs\n/process = map(lambda([in], /tmp=value(in), bound(/tmp)), /addr_in),  # test whether each address has data bound to it \n/counter = aseq(0, /Npnts-1),                                         # a list of indeces [0,..,N-1]  \n\n# Define a function which performs the action of this descriptor\n/fnProcess = \"lambda([index],\t\t     # inputs: the name of the point, its index in the list of points\n  /addr_src = /addr_in[[index]],    # the address where we expect to find the input data\n  /addr_res = /addr_out[[index]],   # the address where we will put the result (vector)\n  /addr_res2 = /addr_out2[[index]], # the address where we will put the result (magnitude)\n  /in_data = value(/addr_src),      # the actual input data (acceleration in this case)\n  /idx = (index*3) + [0,1,2],       # indeces into the state vector for this point\n\t  \n  # calc first diff and magnitude, and assign\n  /diff = /in_data - /state[[/idx]],\n  /mag = l2norm(/diff),\n  assign( value(/addr_res), /diff),\n  assign( value(/addr_res2), /mag),\n\n  # update state\n  /state[[/idx]] = /in_data\n)\",\n\n# Apply the processing function using the list of indeces and whether the data are bound, as indicated in /process \nmap(lambda([body_idx,process], if(process, apply(readstring(/fnProcess), body_idx))), /counter, /process),\n\n# Delete all the addresses we defined\ndelete(/addr_in), delete(/addr_out), delete(/process), delete(/counter), delete(/tmp),\ndelete(/addr_src), delete(/addr_res), delete(/in_data), delete(/idx), delete(/diff), delete(/mag), delete(/tmp_data),\ndelete(/fnProcess), delete(/points), delete(/addr_res2), delete(/addr_out2), delete(/Npnts)"
 				}
 
 			}
@@ -340,7 +337,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -352,7 +349,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -496,11 +493,33 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -563,8 +582,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
