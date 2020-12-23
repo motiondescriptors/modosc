@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 775.0, 147.0, 830.0, 809.0 ],
+		"rect" : [ 299.0, 199.0, 830.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,14 +37,26 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 523.0, 208.0, 103.0, 20.0 ],
+					"text" : "Myo device name"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-21",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 534.0, 118.0, 150.0, 47.0 ],
+					"patching_rect" : [ 523.0, 113.366699000000011, 150.0, 47.0 ],
 					"text" : "ToDo: consider doing it as mo.qtm6D (name is obtained from the Myo)"
 				}
 
@@ -56,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 332.0, 208.0, 60.0, 22.0 ],
+					"patching_rect" : [ 423.0, 208.0, 60.0, 22.0 ],
 					"text" : "device $1"
 				}
 
@@ -80,7 +92,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 31.0, 336.0, 159.0, 22.0 ],
+					"patching_rect" : [ 31.0, 318.0, 159.0, 22.0 ],
 					"text" : "o.pack /acc /gyro /quat /emg"
 				}
 
@@ -128,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 31.0, 265.600000321865082, 159.0, 22.0 ],
+					"patching_rect" : [ 31.0, 265.600000321865082, 252.333333333333371, 22.0 ],
 					"text" : "myo @unlock 1"
 				}
 
@@ -156,7 +168,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 31.0, 488.5, 759.0, 209.0 ],
-					"text" : "#Assign data to modosc namespace\n/pnts = \"/modosc/points\", #modosc points domain\n#/sigs = \"/modosc/signals\", #modosc signals domain #TODO: rpute EMGs to signals domain\n\nassign(/pnts + /name/out + \"/acc\", /acc),\nassign(/pnts + /name/out + \"/acc_mag\", l2norm(/acc)), #computed to match the output of [mo.acceleration]\nassign(/pnts + /name/out + \"/gyro\", /gyro),\nassign(/pnts + /name/out + \"/quat\", /quat),\n# assign(/pnts + /name/out + \"/rot_rpy\", /rotatexyz), #TODO convert to Euler\nassign(/pnts + /name/out + \"/emg\", /emg),\n\n#Clean up\ndelete(/name/out), delete(/pnts), delete(/rotatexyz), delete(/quat), delete(/acc), delete(/gyro), delete(/emg)"
+					"text" : "#Assign data to modosc namespace\n/pnts = \"/modosc/points\", #modosc points domain\n#/sigs = \"/modosc/signals\", #modosc signals domain #TODO: route EMGs to signals domain\n\nassign(/pnts + /name/out + \"/acc\", /acc),\nassign(/pnts + /name/out + \"/acc_mag\", l2norm(/acc)), #computed to match the output of [mo.acceleration]\nassign(/pnts + /name/out + \"/gyro\", /gyro),\nassign(/pnts + /name/out + \"/quat\", /quat),\n# assign(/pnts + /name/out + \"/rot_rpy\", /rotatexyz), #TODO convert to Euler\nassign(/pnts + /name/out + \"/emg\", /emg),\n\n#Clean up\ndelete(/name/out), delete(/pnts), delete(/rotatexyz), delete(/quat), delete(/acc), delete(/gyro), delete(/emg)"
 				}
 
 			}
@@ -253,7 +265,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 52.764816000000003, 755.0, 21.0 ],
-					"text" : "Modosc wrapper for J.F.'s myo max object."
+					"text" : "Modosc wrapper for Jules Françoise's [myo] max object (https://github.com/JulesFrancoise/myo-for-max )."
 				}
 
 			}
@@ -309,7 +321,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -321,11 +333,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.0, 79.733398000000022, 30.0, 30.0 ]
 				}
 
@@ -492,7 +504,25 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "myo.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
