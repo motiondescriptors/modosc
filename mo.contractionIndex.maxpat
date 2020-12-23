@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 2,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1255.0, 1202.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,20 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 760.0, 995.0, 91.0, 33.0 ],
+					"text" : "ToDo: review multiplier."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"align" : 0,
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
@@ -182,8 +195,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 695.0, 590.0, 117.0 ],
-					"text" : "/sum =  nfill(3,0.),  \n/fnAddItUp = \"lambda([index],       # a func to sum the positions of each point\n  /tmp = value(/pnts_addr[[index]]),\n  /sum += /tmp\n)\",\nmap(readstring(/fnAddItUp), /counter),   # run the function\n/cntrd = /sum / /Npnts",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/sum =  nfill(3,0.),  \n/fnAddItUp = \"lambda([index],       # a func to sum the positions of each point\n  /tmp = value(/pnts_addr[[index]]),\n  /sum += /tmp\n)\",\nmap(readstring(/fnAddItUp), /counter),   # run the function\n/cntrd = /sum / /Npnts"
 				}
 
 			}
@@ -222,8 +234,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 575.0, 586.0, 85.0 ],
-					"text" : "/cntrd_addr = \"/modosc/groups\"+/groupName+\"centroid\",\n/cntrd = value(/cntrd_addr),\n/cntrdBnd = bound(/cntrd),\n/counter = aseq(0, /Npnts-1),\ndelete(/cntrd_addr)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/cntrd_addr = \"/modosc/groups\"+/groupName+\"centroid\",\n/cntrd = value(/cntrd_addr),\n/cntrdBnd = bound(/cntrd),\n/counter = aseq(0, /Npnts-1),\ndelete(/cntrd_addr)"
 				}
 
 			}
@@ -346,8 +357,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 902.0, 632.5, 178.0, 141.0 ],
-					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts),\ndelete(/Npnts),\ndelete(/pnts_addr),\ndelete(/prc),\ndelete(/count),\ndelete(/tmp)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts),\ndelete(/Npnts),\ndelete(/pnts_addr),\ndelete(/prc),\ndelete(/count),\ndelete(/tmp)"
 				}
 
 			}
@@ -386,8 +396,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 402.0, 604.0, 127.0 ],
-					"text" : "# Check whether each point has position data bound to it\n/Npnts = length(/pnts),\n/pnts_addr = \"/modosc/points\"+/pnts+\"/pos\",\n/prc = map(lambda([in], /tmp=value(in), if(bound(/tmp),1,0)), /pnts_addr),\n\n# Do all points have bound velocity data?\n/count = sum(/prc),\n/process = (/count == /Npnts)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "# Check whether each point has position data bound to it\n/Npnts = length(/pnts),\n/pnts_addr = \"/modosc/points\"+/pnts+\"/pos\",\n/prc = map(lambda([in], /tmp=value(in), if(bound(/tmp),1,0)), /pnts_addr),\n\n# Do all points have bound velocity data?\n/count = sum(/prc),\n/process = (/count == /Npnts)"
 				}
 
 			}
@@ -402,8 +411,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 878.0, 450.0, 202.0, 73.0 ],
-					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts)"
 				}
 
 			}
@@ -442,8 +450,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 269.0, 842.0, 86.0 ],
-					"text" : "/groupName = /args[[0]],\n/grp_pnts_addr = \"/modosc/groups\"+/groupName+\"/points\",  # the address where we expect to find the list of points\n/pnts = value(/grp_pnts_addr),                           # the actual list of points\n/process = bound(/pnts),                                 # check to see if there is data in the list\ndelete(/args)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/groupName = /args[[0]],\n/grp_pnts_addr = \"/modosc/groups\"+/groupName+\"/points\",  # the address where we expect to find the list of points\n/pnts = value(/grp_pnts_addr),                           # the actual list of points\n/process = bound(/pnts),                                 # check to see if there is data in the list\ndelete(/args)"
 				}
 
 			}
@@ -458,8 +465,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 20.5, 835.0, 734.0, 277.0 ],
-					"text" : "/addressOut = \"/modosc/groups\"+/groupName+\"/ci\",        # where to store the result\n\n# Calculate CI\n/sum = 0.,\n/fnAddItUp = \"lambda([index],             # a func to sum the distance between each\n  /tmp = value(/pnts_addr[[index]]),      # point and the centroid\n  /sum += l2norm(/tmp-/cntrd)\n)\",\nmap(readstring(/fnAddItUp), /counter),    # run the function (essentially a for-loop)\n/sum /= /Npnts,\n\n/CI = 1.0/(1 + /sum),\n# Assign the value\nassign(value(/addressOut), /CI),\n\n# Clean up\ndelete(/groupName), delete(/grp_pnts_addr), delete(/pnts), delete(/process), delete(/addressOut), delete(/Npnts), delete(/pnts_addr), delete(/prc), delete(/sum), delete(/fnAddItUp), delete(/tmp), delete(/counter), delete(/count), delete(/CI), delete(/cntrd), delete(/cntrdBnd)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/addressOut = \"/modosc/groups\"+/groupName+\"/ci\",        # where to store the result\n\n# Calculate CI\n/sum = 0.,\n/fnAddItUp = \"lambda([index],             # a func to sum the distance between each\n  /tmp = value(/pnts_addr[[index]]),      # point and the centroid\n  /sum += l2norm(/tmp-/cntrd)\n)\",\nmap(readstring(/fnAddItUp), /counter),    # run the function (essentially a for-loop)\n/sum /= /Npnts,\n\n/CI = 1.0/(1 + /sum)*100, # added a multiplier to make CI value more usable\n# Assign the value\nassign(value(/addressOut), /CI),\n\n# Clean up\ndelete(/groupName), delete(/grp_pnts_addr), delete(/pnts), delete(/process), delete(/addressOut), delete(/Npnts), delete(/pnts_addr), delete(/prc), delete(/sum), delete(/fnAddItUp), delete(/tmp), delete(/counter), delete(/count), delete(/CI), delete(/cntrd), delete(/cntrdBnd)"
 				}
 
 			}
@@ -671,8 +677,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
