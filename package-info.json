@@ -1,0 +1,23 @@
+{
+    "author" : "Federico Ghelli Visi & Luke Dahl",
+    "description" : "A set of Max abstractions designed for computing motion descriptors from raw motion capture data in real time.",
+    "homepatcher" : "modoscGettingStarted&Testing.maxpat",
+    "max_version_min" : "7.1", "max_version_max" : "none",
+    "name" : "modosc",
+    "os" : {
+        "macintosh" : {
+            "platform" : [ "ia32", "x64" ],
+            "min_version" : "none"
+        },
+        "windows" : {
+            "platform" : [ "ia32", "x64" ],
+            "min_version" : "none"
+        }
+    },
+    "package_extra" : {
+
+    },
+    "tags" : ["interaction design", "motion analysis"],
+    "version" : "0.1",
+    "website" : "https://github.com/motiondescriptors/modosc/"
+}
