@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 299.0, 199.0, 830.0, 809.0 ],
+		"rect" : [ 34.0, 79.0, 1811.0, 1327.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,59 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 174.0, 208.0, 66.0, 22.0 ],
+					"text" : "disconnect"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 31.0, 374.0, 48.0, 22.0 ],
+					"text" : "o.union"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 253.5, 327.0, 88.0, 22.0 ],
+					"text" : "o.pack /rot_rpy"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "list", "" ],
+					"patching_rect" : [ 253.5, 301.0, 77.0, 22.0 ],
+					"text" : "jit.quat2euler"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 523.0, 208.0, 103.0, 20.0 ],
+					"patching_rect" : [ 513.0, 210.0, 103.0, 20.0 ],
 					"text" : "Myo device name"
 				}
 
@@ -52,12 +100,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 523.0, 113.366699000000011, 150.0, 47.0 ],
-					"text" : "ToDo: consider doing it as mo.qtm6D (name is obtained from the Myo)"
+					"patching_rect" : [ 626.0, 210.0, 407.0, 20.0 ],
+					"text" : "ToDo: consider setting it as mo.qtm6D (i.e. name is obtained from the Myo)"
 				}
 
 			}
@@ -68,7 +115,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 423.0, 208.0, 60.0, 22.0 ],
+					"patching_rect" : [ 444.0, 208.0, 60.0, 22.0 ],
 					"text" : "device $1"
 				}
 
@@ -89,11 +136,11 @@
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 31.0, 318.0, 159.0, 22.0 ],
-					"text" : "o.pack /acc /gyro /quat /emg"
+					"patching_rect" : [ 31.0, 328.0, 205.666666666666686, 22.0 ],
+					"text" : "o.pack /acc /gyro /quat /emg /pose"
 				}
 
 			}
@@ -162,13 +209,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-17",
-					"linecount" : 14,
+					"linecount" : 21,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 31.0, 488.5, 759.0, 209.0 ],
-					"text" : "#Assign data to modosc namespace\n/pnts = \"/modosc/points\", #modosc points domain\n#/sigs = \"/modosc/signals\", #modosc signals domain #TODO: route EMGs to signals domain\n\nassign(/pnts + /name/out + \"/acc\", /acc),\nassign(/pnts + /name/out + \"/acc_mag\", l2norm(/acc)), #computed to match the output of [mo.acceleration]\nassign(/pnts + /name/out + \"/gyro\", /gyro),\nassign(/pnts + /name/out + \"/quat\", /quat),\n# assign(/pnts + /name/out + \"/rot_rpy\", /rotatexyz), #TODO convert to Euler\nassign(/pnts + /name/out + \"/emg\", /emg),\n\n#Clean up\ndelete(/name/out), delete(/pnts), delete(/rotatexyz), delete(/quat), delete(/acc), delete(/gyro), delete(/emg)"
+					"patching_rect" : [ 31.0, 473.0, 766.0, 304.0 ],
+					"text" : "if( bound(/name/out), \t\t#avoids crash if /name/out is unbound\nprogn(\n\n#Assign data to modosc namespace\n/pnts = \"/modosc/points\", #modosc points domain\n/sigs = \"/modosc/signals\", #modosc signals domain\n\nassign(/pnts + /name/out + \"/acc\", /acc),\nassign(/pnts + /name/out + \"/acc_mag\", l2norm(/acc)), #computed to match the output of [mo.acceleration]\nassign(/pnts + /name/out + \"/gyro\", /gyro),\nassign(/pnts + /name/out + \"/quat\", /quat),\nassign(/pnts + /name/out + \"/rot_rpy\", /rot_rpy), \nassign(/sigs + /name/out + \"/emg\", /emg),\nassign(/pnts + /name/out + \"/pose\", /pose),\n\n#Clean up\ndelete(/name/out), delete(/pnts), delete(/sigs), delete(/rot_rpy), delete(/quat), delete(/acc), delete(/gyro), delete(/emg), delete(/pose)\n\n)\n)"
 				}
 
 			}
@@ -312,7 +359,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 31.0, 437.0, 50.0, 22.0 ],
+					"patching_rect" : [ 31.0, 438.0, 50.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -321,11 +368,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 734.0, 30.0, 30.0 ]
+					"patching_rect" : [ 31.0, 790.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -333,24 +380,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 31.0, 79.733398000000022, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 208.0, 66.0, 22.0 ],
-					"text" : "disconnect"
 				}
 
 			}
@@ -365,6 +400,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -385,13 +427,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -401,6 +436,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -422,7 +471,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-24", 1 ]
 				}
 
@@ -450,8 +499,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 4 ],
+					"source" : [ "obj-52", 4 ]
 				}
 
 			}
@@ -465,6 +528,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 2 ],
+					"order" : 1,
 					"source" : [ "obj-52", 2 ]
 				}
 
@@ -480,6 +544,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
+					"source" : [ "obj-52", 2 ]
 				}
 
 			}
@@ -504,25 +576,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "myo.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

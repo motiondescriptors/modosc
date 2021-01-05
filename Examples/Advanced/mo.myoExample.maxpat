@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 105.0, 1415.0, 739.0 ],
+		"rect" : [ 144.0, 235.0, 1415.0, 739.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,24 +41,24 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 826.0, 136.0, 377.0, 74.0 ],
-					"text" : "multiple Myo: write the name you want to assign to each Myo in the modosc domain followed by their respective names in Myo Connect\n(these ones are just called \"1\" and \"4\")\nToDo: currently if the secondary Myo falls asleep, the Myo Max object will default to the primary Myo."
+					"patching_rect" : [ 925.0, 93.0, 381.0, 60.0 ],
+					"text" : "Multiple Myos: write the name you want to assign to each Myo in the modosc domain followed by their respective names in Myo Connect. Here, the Myo labeled \"Left\" in Myo connect will be bound to /myo_1 and the Myo labelled \"Right\" will be bound to /myo_2"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 200.0, 129.0, 150.0, 60.0 ],
-					"text" : "Single Myo: just write the name you want to assign to that Myo in the modosc domain"
+					"patching_rect" : [ 158.0, 106.0, 266.0, 33.0 ],
+					"text" : "Single Myo: just write the name you want to assign to the Myo in the modosc domain"
 				}
 
 			}
@@ -70,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 684.0, 80.0, 24.0, 24.0 ]
+					"patching_rect" : [ 756.0, 37.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -82,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 537.0, 80.0, 24.0, 24.0 ]
+					"patching_rect" : [ 609.0, 37.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -95,7 +95,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 537.0, 257.0, 544.0, 34.0 ]
+					"patching_rect" : [ 609.0, 214.0, 544.0, 34.0 ]
 				}
 
 			}
@@ -106,7 +106,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 537.0, 188.0, 48.0, 22.0 ],
+					"patching_rect" : [ 609.0, 145.0, 48.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -118,8 +118,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 684.0, 136.0, 112.0, 22.0 ],
-					"text" : "mo.myo /myo_2 \"4\""
+					"patching_rect" : [ 756.0, 93.0, 125.0, 22.0 ],
+					"text" : "mo.myo /myo_2 Right"
 				}
 
 			}
@@ -130,8 +130,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 537.0, 136.0, 112.0, 22.0 ],
-					"text" : "mo.myo /myo_1 \"1\""
+					"patching_rect" : [ 609.0, 93.0, 117.0, 22.0 ],
+					"text" : "mo.myo /myo_1 Left"
 				}
 
 			}
@@ -143,7 +143,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 74.0, 73.0, 24.0, 24.0 ]
+					"patching_rect" : [ 33.0, 40.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -156,7 +156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 74.0, 229.0, 230.0, 34.0 ]
+					"patching_rect" : [ 33.0, 214.0, 504.0, 34.0 ]
 				}
 
 			}
@@ -167,7 +167,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 74.0, 139.0, 94.0, 22.0 ],
+					"patching_rect" : [ 33.0, 106.0, 94.0, 22.0 ],
 					"text" : "mo.myo /myo_1"
 				}
 
