@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 387.0, 79.0, 1030.0, 1094.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 565.0, 79.0, 1030.0, 1206.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"align" : 0,
@@ -47,8 +49,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 508.0, 26.866699, 289.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 508.0, 26.866699000000001, 289.0, 21.0 ],
 					"text" : "https://github.com/motiondescriptors/modosc",
 					"textjustification" : 0,
 					"textoncolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
@@ -67,8 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 779.5, 52.764816, 114.0, 30.0 ],
-					"style" : "",
+					"patching_rect" : [ 779.5, 52.764816000000003, 114.0, 30.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -82,8 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 508.0, 7.866699, 264.0, 21.0 ],
-					"style" : "",
+					"patching_rect" : [ 508.0, 7.866699, 264.0, 36.0 ],
 					"suppressinlet" : 1,
 					"text" : "modosc: motion descriptors library\n",
 					"textjustification" : 2
@@ -99,7 +98,6 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.0, 7.866699, 280.0, 40.0 ],
-					"style" : "",
 					"suppressinlet" : 1,
 					"text" : "mo.centerOfMass",
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
@@ -119,8 +117,7 @@
 					"patching_rect" : [ 17.0, 7.866699, 359.0, 40.0 ],
 					"proportion" : 0.673267,
 					"pt1" : [ -0.00495, 0.556522 ],
-					"pt2" : [ 1.173267, 0.556522 ],
-					"style" : ""
+					"pt2" : [ 1.173267, 0.556522 ]
 				}
 
 			}
@@ -134,8 +131,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 52.764816, 757.0, 65.0 ],
-					"style" : "",
+					"patching_rect" : [ 17.0, 52.764816000000003, 757.0, 65.0 ],
 					"text" : "Group descriptor. Works similarly to mo.centroid, except it additionally takes into consideration the weight of each point in order to compute the center of mass (or barycenter) of the input group. Weights can be changed using mo.setWeights.\nTakes as arguments a group name and a name for the resulting point. Example: [mo.centerOfMass group_name new_point] computes the center of mass of group_name and stores it in /modosc/points/new_point/pos: [x,y,z]."
 				}
 
@@ -147,8 +143,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 63.5, 154.866699, 74.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 63.5, 154.866699000000011, 74.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -160,8 +155,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 63.5, 125.286255, 60.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 63.5, 125.286254999999997, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -174,7 +168,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 775.5, 623.0, 160.0, 33.0 ],
-					"style" : "",
 					"text" : "Delete addresses we made in the previous stage"
 				}
 
@@ -187,7 +180,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 765.5, 440.0, 160.0, 33.0 ],
-					"style" : "",
 					"text" : "Delete addresses we made in the previous stage"
 				}
 
@@ -198,9 +190,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 408.5, 125.286255, 300.0, 20.0 ],
-					"style" : "",
-					"text" : "Status: Implemented. Needs more testing."
+					"patching_rect" : [ 533.0, 125.286254999999997, 241.0, 20.0 ],
+					"text" : "* Status: Implemented. Needs more testing."
 				}
 
 			}
@@ -211,8 +202,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 157.5, 125.286255, 224.0, 47.0 ],
-					"style" : "",
+					"patching_rect" : [ 157.5, 125.286254999999997, 224.0, 47.0 ],
 					"text" : "the address of the group eg /mygroup1, and the name of the resulting point, eg /new_point"
 				}
 
@@ -225,7 +215,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 63.5, 185.0, 76.0, 22.0 ],
-					"style" : "",
 					"text" : "o.pack /args"
 				}
 
@@ -237,7 +226,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 151.5, 636.0, 313.0, 20.0 ],
-					"style" : "",
 					"text" : "Calc centroid, add to new address, and delete temp vars"
 				}
 
@@ -253,8 +241,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 757.5, 668.5, 186.0, 154.0 ],
-					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts),\ndelete(/Npnts),\ndelete(/pnts_addr),\ndelete(/prc),\ndelete(/count),\ndelete(/tmp),\ndelete(/pointName)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts),\ndelete(/Npnts),\ndelete(/pnts_addr),\ndelete(/prc),\ndelete(/count),\ndelete(/tmp),\ndelete(/pointName)"
 				}
 
 			}
@@ -266,7 +253,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 17.0, 598.0, 117.0, 22.0 ],
-					"style" : "",
 					"text" : "o.if /process == true"
 				}
 
@@ -278,7 +264,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 53.0, 432.0, 339.0, 20.0 ],
-					"style" : "",
 					"text" : "Do all the points in the list exist and have position data?"
 				}
 
@@ -294,8 +279,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 17.0, 459.0, 554.0, 127.0 ],
-					"text" : "# Check whether each point has position data bound to it\n/Npnts = length(/pnts),\n/pnts_addr = \"/modosc/points\"+/pnts+\"/pos\",\n/prc = map(lambda([in], /tmp=value(in), if(bound(/tmp),1,0)), /pnts_addr),\n\n# Do all points have bound position data?\n/count = sum(/prc),\n/process = (/count == /Npnts)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "# Check whether each point has position data bound to it\n/Npnts = length(/pnts),\n/pnts_addr = \"/modosc/points\"+/pnts+\"/pos\",\n/prc = map(lambda([in], /tmp=value(in), if(bound(/tmp),1,0)), /pnts_addr),\n\n# Do all points have bound position data?\n/count = sum(/prc),\n/process = (/count == /Npnts)"
 				}
 
 			}
@@ -310,8 +294,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 733.5, 478.0, 204.0, 73.0 ],
-					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "delete(/process),\ndelete(/grp_pnts_addr),\ndelete(/groupName),\ndelete(/pnts)"
 				}
 
 			}
@@ -323,7 +306,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 80.5, 229.0, 284.0, 33.0 ],
-					"style" : "",
 					"text" : "Does the group name exist, and is there data in /groupName/points?"
 				}
 
@@ -336,7 +318,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 17.0, 382.0, 117.0, 22.0 ],
-					"style" : "",
 					"text" : "o.if /process == true"
 				}
 
@@ -352,8 +333,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 17.0, 267.0, 842.0, 100.0 ],
-					"text" : "/groupName = /args[[0]],\n/pointName = /args[[1]],\n/grp_pnts_addr = \"/modosc/groups\"+/groupName+\"/points\",   # the address where we expect to find the list of points\n/pnts = value(/grp_pnts_addr),\n/process = bound(/pnts),\ndelete(/args)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/groupName = /args[[0]],\n/pointName = /args[[1]],\n/grp_pnts_addr = \"/modosc/groups\"+/groupName+\"/points\",   # the address where we expect to find the list of points\n/pnts = value(/grp_pnts_addr),\n/process = bound(/pnts),\ndelete(/args)"
 				}
 
 			}
@@ -368,8 +348,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 17.0, 661.5, 712.0, 372.0 ],
-					"text" : "/addressOut1 = \"/modosc/points\"+/pointName+\"/pos\",\n/counter = aseq(0, /Npnts-1),\n/weights_addr = \"/modosc/groups\"+/groupName+\"/weights\",\n/weights = value(/weights_addr),                         # the group weights\n\n# Calculate centroid\n/sumx = 0., /sumy = 0., /sumz = 0.,\n/fnAddItUp = \"lambda([index],       # a func to sum the positions of each point\n  /tmp = value(/pnts_addr[[index]]) * /weights[[index]],\n  /sumx += /tmp[[0]],\n  /sumy += /tmp[[1]],\n  /sumz += /tmp[[2]]\n)\",\nmap(readstring(/fnAddItUp), /counter),\n/sumx /= /Npnts,\n/sumy /= /Npnts,\n/sumz /= /Npnts,\n\n# Assign the value to the result address\nassign(value(/addressOut1), [/sumx, /sumy, /sumz]),\n\n# Clean up\ndelete(/process), delete(/addressOut1), delete(/Npnts), delete(/pnts_addr), delete(/prc),\ndelete(/sumx), delete(/sumy), delete(/sumz), delete(/groupName), delete(/grp_pnts_addr),\ndelete(/fnAddItUp), delete(/tmp), delete(/pnts), delete(/counter), delete(/count), delete(/pointName), delete(/weights_addr), delete(/weights)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/addressOut1 = \"/modosc/points\"+/pointName+\"/pos\",\n/counter = aseq(0, /Npnts-1),\n/weights_addr = \"/modosc/groups\"+/groupName+\"/weights\",\n/weights = value(/weights_addr),                         # the group weights\n\n# Calculate centroid\n/sumx = 0., /sumy = 0., /sumz = 0.,\n/fnAddItUp = \"lambda([index],       # a func to sum the positions of each point\n  /tmp = value(/pnts_addr[[index]]) * /weights[[index]],\n  /sumx += /tmp[[0]],\n  /sumy += /tmp[[1]],\n  /sumz += /tmp[[2]]\n)\",\nmap(readstring(/fnAddItUp), /counter),\n/sumx /= /Npnts,\n/sumy /= /Npnts,\n/sumz /= /Npnts,\n\n# Assign the value to the result address\nassign(value(/addressOut1), [/sumx, /sumy, /sumz]),\n\n# Clean up\ndelete(/process), delete(/addressOut1), delete(/Npnts), delete(/pnts_addr), delete(/prc),\ndelete(/sumx), delete(/sumy), delete(/sumz), delete(/groupName), delete(/grp_pnts_addr),\ndelete(/fnAddItUp), delete(/tmp), delete(/pnts), delete(/counter), delete(/count), delete(/pointName), delete(/weights_addr), delete(/weights)"
 				}
 
 			}
@@ -381,7 +360,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 17.0, 229.0, 50.0, 22.0 ],
-					"style" : "",
 					"text" : "o.union"
 				}
 
@@ -394,8 +372,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 1123.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 17.0, 1123.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -408,8 +385,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 121.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 17.0, 121.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -455,7 +431,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-235", 0 ],
 					"hidden" : 1,
-					"midpoints" : [ 652.5, 48.93335, 789.0, 48.93335 ],
+					"midpoints" : [ 652.5, 48.933349999999997, 789.0, 48.933349999999997 ],
 					"source" : [ "obj-236", 1 ]
 				}
 
@@ -543,7 +519,6 @@
 				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
@@ -648,8 +623,8 @@
 , 			{
 				"name" : "scope~001",
 				"default" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ]
+					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
