@@ -42,7 +42,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -58,7 +58,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 29.0, 787.0, 83.0, 22.0 ],
+					"patching_rect" : [ 29.0, 809.0, 83.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -79,7 +79,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-60",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -91,11 +91,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-59",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 402.0, 123.478723526000977, 30.0, 30.0 ]
 				}
 
@@ -116,11 +116,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-48",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, 820.0, 30.0, 30.0 ]
+					"patching_rect" : [ 29.0, 842.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -215,11 +215,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-33",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 93.0, 123.478723526000977, 30.0, 30.0 ]
 				}
 
@@ -396,7 +396,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-2", 1 ],
+					"midpoints" : [ 38.5, 789.739361763000488, 102.5, 789.739361763000488 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -417,7 +418,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -471,35 +472,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "modosc_posenet_main.maxpat",
-				"bootpath" : "~/Dropbox/_FV_git/GitHub/n4m-posenet",
-				"patcherrelativepath" : "../../n4m-posenet",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "index.js",
-				"bootpath" : "~/Dropbox/_FV_git/GitHub/n4m-posenet",
-				"patcherrelativepath" : "../../n4m-posenet",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

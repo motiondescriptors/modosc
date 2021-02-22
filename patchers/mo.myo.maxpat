@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 29.0, 802.0, 48.0, 22.0 ],
+					"patching_rect" : [ 29.0, 810.0, 48.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -409,7 +409,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 75.0, 79.733398000000022, 30.0, 30.0 ]
 				}
 
@@ -438,7 +438,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-16", 1 ],
+					"midpoints" : [ 26.5, 773.36669900000004, 67.5, 773.36669900000004 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -466,7 +467,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
