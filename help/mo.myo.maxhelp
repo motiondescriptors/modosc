@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 1415.0, 739.0 ],
+		"rect" : [ 36.0, 100.0, 1344.0, 736.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 170.0, 125.0, 150.0, 20.0 ],
+					"text" : "Toggle Myo on/off"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 483.0, 150.0, 20.0 ],
-					"text" : "Sample data"
+					"patching_rect" : [ 45.0, 483.0, 195.0, 20.0 ],
+					"text" : "Sample data of a [mo.myo /myo_1]"
 				}
 
 			}
@@ -170,7 +181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 937.0, 172.0, 381.0, 60.0 ],
+					"patching_rect" : [ 784.0, 172.0, 381.0, 60.0 ],
 					"text" : "Multiple Myos: write the name you want to assign to each Myo in the modosc domain followed by their respective names in Myo Connect. Here, the Myo labeled \"Left\" in Myo connect will be bound to /myo_1 and the Myo labelled \"Right\" will be bound to /myo_2"
 				}
 
@@ -182,7 +193,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 170.0, 185.0, 266.0, 33.0 ],
+					"patching_rect" : [ 170.0, 172.0, 266.0, 33.0 ],
 					"text" : "Single Myo: just write the name you want to assign to the Myo in the modosc domain"
 				}
 
@@ -195,7 +206,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 768.0, 116.0, 24.0, 24.0 ]
+					"patching_rect" : [ 727.0, 208.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -207,7 +218,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 621.0, 116.0, 24.0, 24.0 ]
+					"patching_rect" : [ 719.0, 125.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -226,24 +237,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1",
+					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 621.0, 224.0, 48.0, 22.0 ],
-					"text" : "o.union"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 768.0, 172.0, 125.0, 22.0 ],
+					"patching_rect" : [ 621.0, 252.0, 125.0, 22.0 ],
 					"text" : "mo.myo /myo_2 Right"
 				}
 
@@ -252,7 +251,7 @@
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 621.0, 172.0, 117.0, 22.0 ],
@@ -268,7 +267,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 119.0, 24.0, 24.0 ]
+					"patching_rect" : [ 120.0, 125.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -277,13 +276,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-8",
-					"linecount" : 9,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 293.0, 504.0, 143.0 ],
-					"text" : "/modosc/points/myo_1/acc : [0.360352, 0.860352, 0.0219727],\n/modosc/points/myo_1/acc_mag : 0.933028,\n/modosc/points/myo_1/gyro : [-11.875, -1.375, -6.0625],\n/modosc/points/myo_1/quat : [0.261108, -0.65094, -0.507996, 0.500061],\n/modosc/points/myo_1/rot_rpy : [-49.0302, -133.305, -57.9937],\n/modosc/signals/myo_1/emg : [-0.015748, -0.015748, 0.023622, 0.0472441, 0.00787402, 0.0393701, 0.0629921, 0.],\n/modosc/points/myo_1/pose : \"fist\""
+					"patching_rect" : [ 45.0, 293.0, 504.0, 34.0 ]
 				}
 
 			}
@@ -291,10 +288,10 @@
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 45.0, 185.0, 94.0, 22.0 ],
+					"patching_rect" : [ 45.0, 172.0, 94.0, 22.0 ],
 					"text" : "mo.myo /myo_1"
 				}
 
@@ -302,28 +299,21 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-7", 1 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -339,7 +329,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -353,7 +343,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-14", 1 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -361,8 +351,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mo.myo.maxpat",
-				"bootpath" : "~/Dropbox/_FV_git/GitHub/modosc",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Dropbox/_FV_git/GitHub/modosc/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
