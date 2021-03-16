@@ -40,6 +40,20 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 679.0, 276.0, 216.0, 22.0 ],
+					"text" : "vexpr random(1\\, 100) @scalarmode 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-46",
 					"index" : 0,
@@ -489,6 +503,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"midpoints" : [ 688.5, 351.134832681442845, 91.893462999999997, 351.134832681442845 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 2 ],
 					"order" : 1,
 					"source" : [ "obj-10", 0 ]
@@ -610,8 +632,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
-					"midpoints" : [ 688.5, 351.134832681442845, 91.893462999999997, 351.134832681442845 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
