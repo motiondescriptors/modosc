@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1811.0, 1327.0 ],
+		"rect" : [ 34.0, 79.0, 1102.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,37 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 29.0, 810.0, 48.0, 22.0 ],
+					"text" : "o.union"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-12",
+					"index" : 1,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 17.0, 79.733398000000022, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.0, 208.0, 66.0, 22.0 ],
+					"patching_rect" : [ 218.0, 208.0, 66.0, 22.0 ],
 					"text" : "disconnect"
 				}
 
@@ -57,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 31.0, 374.0, 48.0, 22.0 ],
+					"patching_rect" : [ 75.0, 374.0, 48.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -69,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 253.5, 327.0, 88.0, 22.0 ],
+					"patching_rect" : [ 297.5, 327.0, 88.0, 22.0 ],
 					"text" : "o.pack /rot_rpy"
 				}
 
@@ -81,7 +106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "" ],
-					"patching_rect" : [ 253.5, 301.0, 77.0, 22.0 ],
+					"patching_rect" : [ 297.5, 301.0, 77.0, 22.0 ],
 					"text" : "jit.quat2euler"
 				}
 
@@ -92,7 +117,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 513.0, 210.0, 103.0, 20.0 ],
+					"patching_rect" : [ 557.0, 210.0, 103.0, 20.0 ],
 					"text" : "Myo device name"
 				}
 
@@ -103,7 +128,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 626.0, 210.0, 407.0, 20.0 ],
+					"patching_rect" : [ 557.0, 240.0, 407.0, 20.0 ],
 					"text" : "ToDo: consider setting it as mo.qtm6D (i.e. name is obtained from the Myo)"
 				}
 
@@ -115,7 +140,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 444.0, 208.0, 60.0, 22.0 ],
+					"patching_rect" : [ 488.0, 208.0, 60.0, 22.0 ],
 					"text" : "device $1"
 				}
 
@@ -127,7 +152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 31.0, 168.0, 29.5, 22.0 ],
+					"patching_rect" : [ 75.0, 168.0, 29.5, 22.0 ],
 					"text" : "t i b"
 				}
 
@@ -139,7 +164,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 31.0, 328.0, 205.666666666666686, 22.0 ],
+					"patching_rect" : [ 75.0, 328.0, 205.666666666666686, 22.0 ],
 					"text" : "o.pack /acc /gyro /quat /emg /pose"
 				}
 
@@ -151,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 208.0, 62.0, 22.0 ],
+					"patching_rect" : [ 75.0, 208.0, 62.0, 22.0 ],
 					"text" : "stream $1"
 				}
 
@@ -164,7 +189,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 31.0, 125.866699000000011, 24.0, 24.0 ]
+					"patching_rect" : [ 75.0, 125.866699000000011, 24.0, 24.0 ]
 				}
 
 			}
@@ -175,7 +200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 108.0, 208.0, 51.0, 22.0 ],
+					"patching_rect" : [ 152.0, 208.0, 51.0, 22.0 ],
 					"text" : "connect"
 				}
 
@@ -187,7 +212,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 31.0, 265.600000321865082, 252.333333333333371, 22.0 ],
+					"patching_rect" : [ 75.0, 265.600000321865082, 252.333333333333371, 22.0 ],
 					"text" : "myo @unlock 1"
 				}
 
@@ -199,7 +224,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 397.0, 156.0, 66.0, 22.0 ],
+					"patching_rect" : [ 441.0, 156.0, 66.0, 22.0 ],
 					"text" : "unpack s s"
 				}
 
@@ -214,7 +239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 31.0, 473.0, 766.0, 304.0 ],
+					"patching_rect" : [ 75.0, 472.0, 766.0, 304.0 ],
 					"text" : "if( bound(/name/out), \t\t#avoids crash if /name/out is unbound\nprogn(\n\n#Assign data to modosc namespace\n/pnts = \"/modosc/points\", #modosc points domain\n/sigs = \"/modosc/signals\", #modosc signals domain\n\nassign(/pnts + /name/out + \"/acc\", /acc),\nassign(/pnts + /name/out + \"/acc_mag\", l2norm(/acc)), #computed to match the output of [mo.acceleration]\nassign(/pnts + /name/out + \"/gyro\", /gyro),\nassign(/pnts + /name/out + \"/quat\", /quat),\nassign(/pnts + /name/out + \"/rot_rpy\", /rot_rpy), \nassign(/sigs + /name/out + \"/emg\", /emg),\nassign(/pnts + /name/out + \"/pose\", /pose),\n\n#Clean up\ndelete(/name/out), delete(/pnts), delete(/sigs), delete(/rot_rpy), delete(/quat), delete(/acc), delete(/gyro), delete(/emg), delete(/pose)\n\n)\n)"
 				}
 
@@ -323,7 +348,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 397.0, 125.866699000000011, 74.0, 22.0 ],
+					"patching_rect" : [ 441.0, 125.866699000000011, 74.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -335,7 +360,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 397.0, 93.866699000000011, 60.0, 22.0 ],
+					"patching_rect" : [ 441.0, 93.866699000000011, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -347,7 +372,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 397.0, 374.0, 101.0, 22.0 ],
+					"patching_rect" : [ 441.0, 374.0, 101.0, 22.0 ],
 					"text" : "o.pack /name/out"
 				}
 
@@ -359,7 +384,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 31.0, 438.0, 50.0, 22.0 ],
+					"patching_rect" : [ 75.0, 438.0, 50.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -372,7 +397,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 790.0, 30.0, 30.0 ]
+					"patching_rect" : [ 29.0, 857.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -380,12 +405,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 31.0, 79.733398000000022, 30.0, 30.0 ]
+					"patching_rect" : [ 75.0, 79.733398000000022, 30.0, 30.0 ]
 				}
 
 			}
@@ -413,6 +438,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"midpoints" : [ 26.5, 773.36669900000004, 67.5, 773.36669900000004 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -428,6 +461,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
