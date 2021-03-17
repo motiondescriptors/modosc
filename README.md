@@ -4,6 +4,9 @@ modosc is a set of Max abstractions designed for computing motion descriptors fr
 
 VIDEO TUTORIALS: https://www.youtube.com/playlist?list=PLMrDazzs9wCQET95Mel3v_Ujmq0uP7XCT
 
+## Installation
+Download the .zip file, open it, then move the 'modosc' folder in your Max 'Packages' folder. 
+
 ## Dependencies
 
 Using modosc requires the o.dot externals for Max. The official o.dot releases can be found here: http://cnmat.berkeley.edu/downloads. However if you are running Windows in 64-bit mode you will need a more recent beta release from the o.dot github page here: https://github.com/CNMAT/CNMAT-odot/releases 
