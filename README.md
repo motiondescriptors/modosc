@@ -22,3 +22,7 @@ For more information see the following two papers on the initial release of Modo
 F. Visi and L. Dahl, “Real-Time Motion Capture Analysis and Music Interaction with the Modosc Descriptor Library,” in NIME’18 – International Conference on New Interfaces for Musical Expression, 2018. (This is included in the repository as modosc_NIME_2018.pdf.)
 
 L. Dahl and F. Visi, "Modosc: A Library of Real-Time Movement Descriptors for Marker-Based Motion Capture", in MOCO'18, Proceedings of the 5th International Conference on Movement and Computing, 2018. (This can be found here: https://dl.acm.org/citation.cfm?id=3212842) 
+
+## Related
+
+**GIMLeT** is a set of Max patches for interactive machine learning that uses modosc for motion features extraction: https://github.com/federicoVisi/GIMLeT
