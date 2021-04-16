@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1117.0, 241.0, 902.0, 937.0 ],
+		"rect" : [ 1125.0, 218.0, 902.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,29 +40,38 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "comment",
+					"id" : "obj-44",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 704.0, 166.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 704.0, 166.0, 150.0, 20.0 ],
-					"text" : "/name MIDIch"
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 17.0, 392.0, 63.0, 22.0 ],
+					"text" : "o.prepend"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-34",
-					"linecount" : 6,
-					"maxclass" : "o.display",
+					"id" : "obj-43",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 148.756802721088434, 278.0, 295.0, 102.0 ],
-					"text" : "/rot_rpy : [66, 89, 126],\n/vibrato : 62,\n/tap : 0,\n/click/c : 0,\n/click/d : 0,\n/click/u : 0"
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 17.0, 423.0, 147.0, 22.0 ],
+					"text" : "o.prepend /modosc/points"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 701.0, 159.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 704.0, 166.0, 150.0, 20.0 ],
+					"text" : "/name MIDIch(todo)"
 				}
 
 			}
@@ -192,7 +201,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.918934240362816, 182.0, 73.0, 22.0 ],
+					"patching_rect" : [ 16.918934240362816, 171.0, 73.0, 22.0 ],
 					"text" : "pack i i i"
 				}
 
@@ -276,7 +285,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 17.0, 228.0, 427.0, 22.0 ],
+					"patching_rect" : [ 16.918934240362816, 214.0, 427.513605442176924, 22.0 ],
 					"text" : "o.pack /rot_rpy /vibrato /tap /click/c /click/d /click/u"
 				}
 
@@ -290,21 +299,6 @@
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 608.0, 158.0, 63.0, 22.0 ],
 					"text" : "unpack s i"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-17",
-					"linecount" : 26,
-					"maxclass" : "o.expr.codebox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 17.0, 464.0, 766.0, 372.0 ],
-					"text" : "if( bound(/name/out), \t\t#avoids crash if /name/out is unbound\nprogn(\n\n#Assign data to modosc namespace\n/pnts = \"/modosc/points\", #modosc points domain\n#/sigs = \"/modosc/signals\", #modosc signals domain\n\n#assign(/pnts + /name/out + \"/acc\", /acc),\n#assign(/pnts + /name/out + \"/acc_mag\", l2norm(/acc)), #computed to match the output of [mo.acceleration]\n\nassign(/pnts + /name/out + \"/acc_mag\", /acc_mag), \n\n#assign(/pnts + /name/out + \"/gyro\", /gyro),\n#assign(/pnts + /name/out + \"/quat\", /quat),\nassign(/pnts + /name/out + \"/rot_rpy\", /rot_rpy), \n#assign(/sigs + /name/out + \"/emg\", /emg),\n#assign(/pnts + /name/out + \"/pose\", /pose),\n\n#Clean up\n#delete(/name/out), delete(/pnts), delete(/sigs), delete(/rot_rpy), delete(/quat), delete(/acc), #delete(/gyro), delete(/emg), delete(/pose)\ndelete(/rot_rpy),delete(/name/out), delete(/pnts), delete(/acc_mag)\n\n)\n)"
 				}
 
 			}
@@ -435,21 +429,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 608.0, 384.0, 101.0, 22.0 ],
-					"text" : "o.pack /name/out"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 17.0, 402.0, 50.0, 22.0 ],
-					"text" : "o.union"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 608.0, 392.0, 72.0, 22.0 ],
+					"text" : "prepend set"
 				}
 
 			}
@@ -503,20 +485,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-23", 2 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -561,23 +529,28 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 1 ],
+					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-43", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -598,19 +571,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
+				"name" : "o.prepend.mxo",
 				"type" : "iLaX"
 			}
  ],
