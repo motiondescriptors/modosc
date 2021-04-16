@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PRESET_BANK name="Default Preset Bank" id="0" device_orientation="1" focused="1"
+             position="0" selected_id="36d4e6bf6c2240a3ab23d52db5ce819a">
+  <PRESET name="Preset 4" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="5900aa9bfdd6485ea29d5fc99daf0fdd" focused="1" custom_preset_name="Subtractive Waves"
+          midi_channel="0">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1109.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvBEDlbv8kbg41YkAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DfBEDlbv8kbgQWY.XWXrUWY.DPBD.....XlYl6O..UPRETS.Df.oQF.ArPAgIGbeMGcgQWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAgQGcgM1Z.XWXrUWY.DPBD.....dT354O..UPRETS.Df.oQF.AfPAiUGcuYlY.XWXrUWY.DPBD.........9O..UPRETS.Df.oQF.AbPAjU1XgkG.1EFa0UF.Aj.A....fVOJ79C.PEjTA0D.AHPZjAP.KT.YoYlY0MWZu4F.1EFa0UF.Aj.A.....lYlI+C.PEjTA0D.AHPZjAP.GT.YxklckAfcgwVckAP.IP.....fT354+..TAIUPMAP.BjFY.D.BEPlb001Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEPlb001Wx.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceEC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.OT.YxUWaeMWYrU1Xz8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAk41Yo4VY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAlIWYkoWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.ArPAnElbs8laoM1b.XWXrUWY.DPBD.........9O..UPRETS.Df.oQF.AnPAs8FYDUFbzgF.1EFa0UF.Aj.A.....tdTH+C.PEjTA0D.AHPZjAP.JTPauQ1TvUVYjAfcgwVckAP.IP.....3+++6+..TAIUPMAP.BjFY.DvAEz1axAGZ.XWXrUWY.DPBD.....tdT38O..UPRETS.Df.oQF.AvPAvkFcig1WhUlajAfcgwVckAP.IP......MyLH.C.TAIUPMAP.BjFY.DPBEHWYrUVXyUF.1EFa0UF.Aj.A.....Etdz9C.PEjTA0D.AHPZjAP.KTfbkM2atElaiUF.1EFa0UF.Aj.A.....yLyj+C.PEjTA0D.AHPZjAP.HTfbkYWYxIF.1EFa0UF.Aj.A.....OJbc+C.PEjTA0D.AHPZjAP.NTfbkYWYxI1WjU1XgkG.1EFa0UF.Aj.A....fgqGk+C.PEjTA0D.AHPZjAP.FTvbooWY.XWXrUWY.DPBD.....FtdH+O..UPRETS.Df.oQF.AjPAyU2bzEVZtAfcgwVckAP.IP.....XOJb6+..TAIUPMAP.BjFY.D.BEPWZsIlbkAfcgwVckAP.IP.....nGEt3+.."/>
+    <MAPPING id="69e83247b7c548de964875abc1a88f2f" type="16" name="TILT" wave_id="0"
+             points="0.54359|0.00515464|0.54359|0.564433|1|0.440721|1|1" curve_type="2"
+             center_value="0.25" mute="0" parameter_id="6" parameter_name="Timbre"
+             curve_view_visible="0"/>
+    <MAPPING id="38044c588468478c83cccd12702bf558" type="19" name="VIBRATO"
+             wave_id="0" mute="0" points="0.5|0.0612245|0.496565|0.5|0.5|0.938775|1|1"
+             sensitivity="0.1932989656925201" parameter_id="8" parameter_name="Pitch Bend"/>
+    <MAPPING id="152d90f4c93c495a8fdf9246c2ece3f2" type="16" name="Tilt" parameter_id="9"
+             parameter_name="Filter - Cutoff" wave_id="0" mute="0" curve_view_visible="0"
+             points="0.538462|0.469072|0.769231|0.234536|0.769231|0.234536|1|0"
+             center_value="0.0" curve_type="1"/>
+  </PRESET>
+  <PRESET name="Preset 5" open_by_default="0" active_by_default="1" accumulative_movements="0"
+          id="ab9b108ba1e840d19f45cf3d586b2bc0" focused="0" custom_preset_name="Reykjavik, Iceland"
+          midi_channel="0">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1105.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvBEDlbv8kbg41YkAfcgwVckAP.ED........UPRETS.Df.oQF.AnPAgIGbeIWXzUF.1EFa0UF.Aj.A.....Jb8f+C.PEjTA0D.AHPZjAP.KTPXxA2WyQWXzUF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPXzQWXisF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.HTvX0Q2alYF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.GT.YkMVX4AfcgwVckAP.IP.....3iBWy+..TAIUPMAP.BjFY.DvBEPVZlYVcyk1atAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DvAEPlboYWY.XWXrUWY.DPBD.....LyLy9O..UPRETS.Df.oQF.AfPAjIWcs8UL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAjIWcs8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.A7PAjIWcs80bkwVYiQ2Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceIC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPYtcVZtUF.1EFa0UF.Aj.A........H.D.PEjTA0D.AHPZjAP.HTfYxUVY5UF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.KT.ZgIWau4VZiMG.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.JTPauQFQkAGcnAfcgwVckAP.IP.....v0iBy+..TAIUPMAP.BjFY.DfBEz1ajMEbkUFY.XWXrUWY.DPBD.....9+++9O..UPRETS.Df.oQF.AbPAs8lbvgF.1EFa0UF.Aj.A.....WOJj+C.PEjTA0D.AHPZjAP.LT.boQ2Xn8kXk4FY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AjPAxUFakE1bkAfcgwVckAP.IP.....3Qgq2+..TAIUPMAP.BjFY.DvBEHWYy8lag41XkAfcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEHWY1UlbhAfcgwVckAP.IP.....nv0i3+..TAIUPMAP.BjFY.DfCEHWY1Ulbh8EYkMVX4AfcgwVckAP.IP......WOJ5+..TAIUPMAP.BjFY.DfAELWZ5UF.1EFa0UF.Aj.A....flYli+C.PEjTA0D.AHPZjAP.ITvb0MGcgkla.XWXrUWY.DPBD.....LyLy8O..UPRETS.Df.oQF.AfPAzkVahIWY.XWXrUWY.DPBD.....XlYl9O.."/>
+    <MAPPING id="c2d3f28bd9a74c56bc7ea848ee8df84d" type="18" name="ROLL" wave_id="0"
+             points="0.5|0|0.75|0.309896|0.75|0.309896|1|0.619792" curve_type="1"
+             center_value="0.0" mute="0" parameter_id="6" parameter_name="Timbre"
+             curve_view_visible="1"/>
+    <MAPPING id="773bc957147d4e449308fe88c7d40ae6" type="16" name="TILT" wave_id="0"
+             points="0.194|0|0.328771|0.234375|0.328771|0.234375|0.463542|0.46875"
+             curve_type="1" center_value="0.0" mute="0" parameter_id="7" parameter_name="Morph"
+             curve_view_visible="1"/>
+    <MAPPING id="48b3a810deda47679098c52d46d1f30d" type="18" name="ROLL" wave_id="0"
+             points="0.5|0|0.75|0.309896|0.75|0.309896|1|0.619792" curve_type="1"
+             center_value="0.0" mute="0" parameter_id="5" parameter_name="Harmonics"
+             curve_view_visible="0"/>
+    <MAPPING id="ab7e534fd2d54e139614d16ffca026a3" type="18" name="Roll" wave_id="0"
+             center_value="0.0" points="0.609375|0.473958|1|0.473958|1|0.473958|1|0"
+             curve_type="3" parameter_id="8" parameter_name="Pitch Bend" curve_view_visible="1"/>
+  </PRESET>
+  <PRESET name="Preset 2" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="085fe5d4ea4c485abba9177b16438649" focused="0" custom_preset_name="Arp Heaven"
+          midi_channel="0" mappings_visible_in_sidebar="0">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1105.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.EDf.......UPRETS.Df.oQF.ArPAgIGbeIWXtcVY.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AnPAgIGbeIWXzUF.1EFa0UF.Aj.A....fqGEd+C.PEjTA0D.AHPZjAP.KTPXxA2WyQWXzUF.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.HTPXzQWXisF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.HTvX0Q2alYF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.GT.YkMVX4AfcgwVckAP.IP.....vQgqq+..TAIUPMAP.BjFY.DvBEPVZlYVcyk1atAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DvAEPlboYWY.XWXrUWY.DPBD........f9O..UPRETS.Df.oQF.AfPAjIWcs8UL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAjIWcs8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.A7PAjIWcs80bkwVYiQ2Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceIC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPYtcVZtUF.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.HTfYxUVY5UF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.KT.ZgIWau4VZiMG.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.JTPauQFQkAGcnAfcgwVckAP.IP.....XlYl0+..TAIUPMAP.BjFY.DfBEz1ajMEbkUFY.XWXrUWY.DPBD.....v0ih.P..UPRETS.Df.oQF.AbPAs8lbvgF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.LT.boQ2Xn8kXk4FY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AjPAxUFakE1bkAfcgwVckAP.IP.....PgqGg+..TAIUPMAP.BjFY.DvBEHWYy8lag41XkAfcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEHWY1UlbhAfcgwVckAP.IP.....3nv02+..TAIUPMAP.BjFY.DfCEHWY1Ulbh8EYkMVX4AfcgwVckAP.IP.....PgqG4+..TAIUPMAP.BjFY.DfAELWZ5UF.1EFa0UF.Aj.A.....Et9J.D.PEjTA0D.AHPZjAP.ITvb0MGcgkla.XWXrUWY.DPBD.....XlYl6O..UPRETS.Df.oQF.AfPAzkVahIWY.XWXrUWY.DPBD.........9O.."/>
+    <MAPPING id="26559b5c45954807b2b18116616ffb57" type="16" name="TILT" wave_id="0"
+             points="0.447|0.00510204|0.583757|0.482143|0.583757|0.482143|0.721|0.959184"
+             curve_type="1" center_value="0.2454369068145752" mute="0" parameter_id="22"
+             parameter_name="Release"/>
+    <MAPPING id="68e9f4ccbed84aabb18ccc3b83bd5950" type="18" name="ROLL" wave_id="0"
+             points="0.505|0|0.75|0.5|0.75|0.5|1|1" curve_type="1" center_value="0.2945243120193481"
+             mute="0" parameter_id="7" parameter_name="Morph"/>
+    <MAPPING id="53dcdc6f6be44ec2b9654daba1ffc82e" type="17" name="PAN" wave_id="0"
+             points="0.693|0|0.8465|0.466146|0.8465|0.466146|1|0.932292" curve_type="1"
+             center_value="0.8590291738510132" mute="0" parameter_id="6" parameter_name="Timbre"
+             curve_view_visible="1"/>
+    <MAPPING id="ed14061e85734517987a739cfb63cc89" type="16" name="TILT" wave_id="0"
+             points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1" center_value="0.25"
+             mute="0" parameter_id="21" parameter_name="Sustain" curve_view_visible="1"/>
+    <MAPPING id="f58ea4c07d6c4562a98796e77d703df1" type="17" name="Pan" wave_id="0"
+             center_value="0.0" points="0.5625|0.421875|0.78125|0.546875|0.78125|0.546875|1|0.671875"
+             curve_type="1" parameter_id="2" parameter_name="Arp - Rate" curve_view_visible="1"
+             mute="1"/>
+  </PRESET>
+  <PRESET name="Preset 8" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="75f010ff39b14cd49435bd454bd62da8" focused="0" custom_preset_name="Overdriven Sequence"
+          midi_channel="0">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1105.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.EDv.......UPRETS.Df.oQF.ArPAgIGbeIWXtcVY.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AnPAgIGbeIWXzUF.1EFa0UF.Aj.A....f5Qga+C.PEjTA0D.AHPZjAP.KTPXxA2WyQWXzUF.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.HTPXzQWXisF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.HTvX0Q2alYF.1EFa0UF.Aj.A....fGEtd+C.PEjTA0D.AHPZjAP.GT.YkMVX4AfcgwVckAP.IP.....3Qgqm+..TAIUPMAP.BjFY.DvBEPVZlYVcyk1atAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DvAEPlboYWY.XWXrUWY.DPBD.....Rgqm9O..UPRETS.Df.oQF.AfPAjIWcs8UL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAjIWcs8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.A7PAjIWcs80bkwVYiQ2Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceIC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPYtcVZtUF.1EFa0UF.Aj.A..........D.PEjTA0D.AHPZjAP.HTfYxUVY5UF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.KT.ZgIWau4VZiMG.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.JTPauQFQkAGcnAfcgwVckAP.IP.............TAIUPMAP.BjFY.DfBEz1ajMEbkUFY.XWXrUWY.DPBD.....9+++9O..UPRETS.Df.oQF.AbPAs8lbvgF.1EFa0UF.Aj.A....fYlYl+C.PEjTA0D.AHPZjAP.LT.boQ2Xn8kXk4FY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AjPAxUFakE1bkAfcgwVckAP.IP.....PgqGg+..TAIUPMAP.BjFY.DvBEHWYy8lag41XkAfcgwVckAP.IP.....HyLy5+..TAIUPMAP.BjFY.D.BEHWY1UlbhAfcgwVckAP.IP......tdTz+..TAIUPMAP.BjFY.DfCEHWY1Ulbh8EYkMVX4AfcgwVckAP.IP.....fYlYx+..TAIUPMAP.BjFY.DfAELWZ5UF.1EFa0UF.Aj.A.....6QA..D.PEjTA0D.AHPZjAP.ITvb0MGcgkla.XWXrUWY.DPBD.....XlYl8O..UPRETS.Df.oQF.AfPAzkVahIWY.XWXrUWY.DPBD.....XlYl9O.."/>
+    <MAPPING id="e98a87b00728411884965140169dbdf0" type="16" name="TILT" wave_id="0"
+             points="0.533333|0.448454|0.766667|0.724227|0.766667|0.724227|1|1"
+             curve_type="1" center_value="0.25" mute="0" parameter_id="7"
+             parameter_name="Morph" curve_view_visible="1"/>
+    <MAPPING id="fd6cf9b60be144fa9299527525d9947f" type="18" name="ROLL" wave_id="0"
+             points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1" center_value="0.25"
+             mute="0" parameter_id="21" parameter_name="Sustain"/>
+    <MAPPING id="2b4b805b02d242a3839c9dac0836610e" type="18" name="ROLL" wave_id="0"
+             points="0.715736|0|0.857868|0.0736041|0.857868|0.0736041|1|0.147208"
+             curve_type="1" center_value="0.25" mute="0" parameter_id="22"
+             parameter_name="Release" curve_view_visible="0"/>
+  </PRESET>
+  <PRESET name="Preset 9" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="8ba4c6651b804b6a9b67544469350b02" focused="0" custom_preset_name="Beautiful Vibrato"
+          midi_channel="0">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1109.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvBEDlbv8kbg41YkAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DfBEDlbv8kbgQWY.XWXrUWY.DPBD.....XlYl6O..UPRETS.Df.oQF.ArPAgIGbeMGcgQWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAgQGcgM1Z.XWXrUWY.DPBD.....T35Q3O..UPRETS.Df.oQF.AfPAiUGcuYlY.XWXrUWY.DPBD.....dT356O..UPRETS.Df.oQF.AbPAjU1XgkG.1EFa0UF.Aj.A....fGEtN+C.PEjTA0D.AHPZjAP.KT.YoYlY0MWZu4F.1EFa0UF.Aj.A....fBWOh+C.PEjTA0D.AHPZjAP.GT.YxklckAfcgwVckAP.IP.....nv0i5+..TAIUPMAP.BjFY.D.BEPlb001Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEPlb001Wx.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceEC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.OT.YxUWaeMWYrU1Xz8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAk41Yo4VY.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AfPAlIWYkoWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.ArPAnElbs8laoM1b.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AnPAs8FYDUFbzgF.1EFa0UF.Aj.A.....b8nf+C.PEjTA0D.AHPZjAP.JTPauQ1TvUVYjAfcgwVckAP.IP.....3+++6+..TAIUPMAP.BjFY.DvAEz1axAGZ.XWXrUWY.DPBD.....b8nv9O..UPRETS.Df.oQF.AvPAvkFcig1WhUlajAfcgwVckAP.IP.............TAIUPMAP.BjFY.DPBEHWYrUVXyUF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.KTfbkM2atElaiUF.1EFa0UF.Aj.A....fdT3J+C.PEjTA0D.AHPZjAP.HTfbkYWYxIF.1EFa0UF.Aj.A....fGEtl+C.PEjTA0D.AHPZjAP.NTfbkYWYxI1WjU1XgkG.1EFa0UF.Aj.A....flYlg+C.PEjTA0D.AHPZjAP.FTvbooWY.XWXrUWY.DPBD.....lYlA9O..UPRETS.Df.oQF.AjPAyU2bzEVZtAfcgwVckAP.IP.....HyLy5+..TAIUPMAP.BjFY.D.BEPWZsIlbkAfcgwVckAP.IP.........7+.."/>
+    <MAPPING id="86ccf6b985b44b808c667ff39db1ff9d" type="19" name="VIBRATO"
+             wave_id="0" mute="0" points="0.5|0.0204082|0.503776|0.5|0.5|0.979592|1|1"
+             sensitivity="0.5169636011123657" parameter_id="8" parameter_name="Pitch Bend"/>
+  </PRESET>
+  <PRESET name="Preset 13" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="a7337e919c1b4890a8c7b36528b7ae37" focused="0" midi_channel="0"
+          custom_preset_name="Wedding Arp">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1101.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.ED........UPRETS.Df.oQF.ArPAgIGbeIWXtcVY.XWXrUWY.DPAAH......PEjTA0D.AHPZjAP.JTPXxA2WxEFckAfcgwVckAP.IP.........5+..TAIUPMAP.BjFY.DvBEDlbv80bzEFckAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.D.BEDFczE1XqAfcgwVckAP.IP.....f8nvw+..TAIUPMAP.BjFY.D.BELVcz8lYlAfcgwVckAP.IP.........3+..TAIUPMAP.BjFY.DvAEPVYiEVd.XWXrUWY.DPBD.....hBWO8O..UPRETS.Df.oQF.ArPAjklYlU2bo8la.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AbPAjIWZ1UF.1EFa0UF.Aj.A.....WOJj+C.PEjTA0D.AHPZjAP.HT.YxUWaeEC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HT.YxUWaeIC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.OT.YxUWaeMWYrU1Xz8UL.XWXrUWY.DPBD.............UPRETS.Df.oQF.A7PAjIWcs80bkwVYiQ2Wx.fcgwVckAP.IP.............TAIUPMAP.BjFY.D.BETlamklakAfcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEXlbkUldkAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvBEfVXx01atk1XyAfcgwVckAP.IP.........3+..TAIUPMAP.BjFY.DfBEz1ajQTYvQGZ.XWXrUWY.DPBD.............UPRETS.Df.oQF.AnPAs8FYSAWYkQF.1EFa0UF.Aj.A....f+++u+C.PEjTA0D.AHPZjAP.GTPauIGbnAfcgwVckAP.IP.........3+..TAIUPMAP.BjFY.D.CE.WZzMFZeIVYtQF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.ITfbkwVYgMWY.XWXrUWY.DPBD.........8O..UPRETS.Df.oQF.ArPAxU1bu4VXtMVY.XWXrUWY.DPBD.........9O..UPRETS.Df.oQF.AfPAxUlckImX.XWXrUWY.DPBD.....1iBW7O..UPRETS.Df.oQF.A3PAxUlckImXeQVYiEVd.XWXrUWY.DPBD.....XlYl7O..UPRETS.Df.oQF.AXPAykldkAfcgwVckAP.IP.....vdT...A.TAIUPMAP.BjFY.DPBELWcyQWXo4F.1EFa0UF.Aj.A.....Etdj+C.PEjTA0D.AHPZjAP.HT.co0lXxUF.1EFa0UF.Aj.A........f+C."/>
+    <MAPPING id="59984c00727e4615b72a78dafbdc057d" type="16" name="Tilt" wave_id="0"
+             points="0.5|0|0.75|0.5|0.75|0.5|1|1" center_value="0.0" curve_type="1"
+             parameter_id="7" parameter_name="Morph"/>
+    <MAPPING id="adce44ce56e346b8905bc506fe5f5030" type="18" name="Roll" wave_id="0"
+             points="0.507692|0.118557|0.753846|0.404639|0.753846|0.404639|1|0.690722"
+             center_value="0.0" curve_type="1" parameter_id="22" parameter_name="Release"
+             curve_view_visible="1"/>
+    <MAPPING id="942360badb39402cb86e912b94296b7f" type="18" name="Roll" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             parameter_id="20" parameter_name="Decay"/>
+  </PRESET>
+  <PRESET name="Preset 4" open_by_default="0" accumulative_movements="1"
+          id="aae841943de34e7a99bea3ac6de635df" focused="0" active_by_default="1"
+          custom_preset_name="Chords Ahoy" midi_channel="0">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1105.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.EDf.......UPRETS.Df.oQF.ArPAgIGbeIWXtcVY.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AnPAgIGbeIWXzUF.1EFa0UF.Aj.A.....Jb8f+C.PEjTA0D.AHPZjAP.KTPXxA2WyQWXzUF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPXzQWXisF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.HTvX0Q2alYF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.GT.YkMVX4AfcgwVckAP.IP.....fYlYt+..TAIUPMAP.BjFY.DvBEPVZlYVcyk1atAfcgwVckAP.IP......WOJ5+..TAIUPMAP.BjFY.DvAEPlboYWY.XWXrUWY.DPBD.....nv0i9O..UPRETS.Df.oQF.AfPAjIWcs8UL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAjIWcs8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.A7PAjIWcs80bkwVYiQ2Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceIC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPYtcVZtUF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTfYxUVY5UF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.KT.ZgIWau4VZiMG.1EFa0UF.Aj.A.....WOJj+C.PEjTA0D.AHPZjAP.JTPauQFQkAGcnAfcgwVckAP.IP.............TAIUPMAP.BjFY.DfBEz1ajMEbkUFY.XWXrUWY.DPBD.....hqGwAP..UPRETS.Df.oQF.AbPAs8lbvgF.1EFa0UF.Aj.A....fv0ih+C.PEjTA0D.AHPZjAP.LT.boQ2Xn8kXk4FY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AjPAxUFakE1bkAfcgwVckAP.IP.....fYlYt+..TAIUPMAP.BjFY.DvBEHWYy8lag41XkAfcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEHWY1UlbhAfcgwVckAP.IP.....XOJb0+..TAIUPMAP.BjFY.DfCEHWY1Ulbh8EYkMVX4AfcgwVckAP.IP......Rgq4+..TAIUPMAP.BjFY.DfAELWZ5UF.1EFa0UF.Aj.A.....6QA..D.PEjTA0D.AHPZjAP.ITvb0MGcgkla.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AfPAzkVahIWY.XWXrUWY.DPBD.........9O.."/>
+    <MAPPING id="5488d7467f494c2389993178925fc5d4" type="16" name="TILT" wave_id="0"
+             points="0.369792|0.734375|0.458333|0.760417|0.458333|0.760417|1|1"
+             curve_type="3" center_value="0.25" parameter_id="6" parameter_name="Timbre"
+             mute="0" curve_view_visible="1"/>
+    <MAPPING id="144de1d541184fc7b0015d8438aad16b" type="16" name="TILT" wave_id="0"
+             points="0.442708|0|0.442708|0.697917|0.442708|0.697917|1|0.948454"
+             curve_type="3" center_value="-1.423534154891968" mute="0" parameter_id="7"
+             parameter_name="Morph" curve_view_visible="1"/>
+    <MAPPING id="4db8f4f0bd2c4aecb9fe72cbf269901a" type="19" name="VIBRATO"
+             wave_id="0" mute="0" points="0.5|0.112944|0.496952|0.5|0.5|0.887056|1|1"
+             sensitivity="0.6456186771392822" parameter_id="8" parameter_name="Pitch Bend"/>
+    <MAPPING id="a170160e5022448abd6ad539050ae502" type="21" name="Click"
+             wave_id="0" key_command="R" button_event="1|6"/>
+  </PRESET>
+  <PRESET name="Preset 11" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="5f8dfe63fb514eb998f5fba540358c1f" focused="0" midi_channel="0"
+          custom_preset_name="True Ring Modulation">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1105.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.EDv.......UPRETS.Df.oQF.ArPAgIGbeIWXtcVY.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AnPAgIGbeIWXzUF.1EFa0UF.Aj.A.....lYl49C.PEjTA0D.AHPZjAP.KTPXxA2WyQWXzUF.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.HTPXzQWXisF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.HTvX0Q2alYF.1EFa0UF.Aj.A....fGEtN+C.PEjTA0D.AHPZjAP.GT.YkMVX4AfcgwVckAP.IP.....PyLyv+..TAIUPMAP.BjFY.DvBEPVZlYVcyk1atAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvAEPlboYWY.XWXrUWY.DPBD........f9O..UPRETS.Df.oQF.AfPAjIWcs8UL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAjIWcs8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.A7PAjIWcs80bkwVYiQ2Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceIC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPYtcVZtUF.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.HTfYxUVY5UF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.KT.ZgIWau4VZiMG.1EFa0UF.Aj.A.....tdTf+C.PEjTA0D.AHPZjAP.JTPauQFQkAGcnAfcgwVckAP.IP.............TAIUPMAP.BjFY.DfBEz1ajMEbkUFY.XWXrUWY.DPBD.....9+++9O..UPRETS.Df.oQF.AbPAs8lbvgF.1EFa0UF.Aj.A....fYlYl+C.PEjTA0D.AHPZjAP.LT.boQ2Xn8kXk4FY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AjPAxUFakE1bkAfcgwVckAP.IP.....PgqGg+..TAIUPMAP.BjFY.DvBEHWYy8lag41XkAfcgwVckAP.IP.....nYlY3+..TAIUPMAP.BjFY.D.BEHWY1UlbhAfcgwVckAP.IP.....fT350+..TAIUPMAP.BjFY.DfCEHWY1Ulbh8EYkMVX4AfcgwVckAP.IP.....fBWO3+..TAIUPMAP.BjFY.DfAELWZ5UF.1EFa0UF.Aj.A.....6QA..D.PEjTA0D.AHPZjAP.ITvb0MGcgkla.XWXrUWY.DPBD.....ZlYF9O..UPRETS.Df.oQF.AfPAzkVahIWY.XWXrUWY.DPBD.....35Qg8O.."/>
+    <MAPPING id="11cd160a212944aca9b30ae3635cdd19" type="16" name="Tilt" parameter_id="2"
+             parameter_name="Arp - Rate" wave_id="0" points="0|0|0|0.974227|0|0.974227|1|1"
+             center_value="-1.30081570148468" curve_type="3" curve_view_visible="0"/>
+    <MAPPING id="70a58aa883204c79b2d42aa46c7b43bc" type="18" name="Roll" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             parameter_id="7" parameter_name="Morph"/>
+    <MAPPING id="7fd262c5b6284b1697218a6f3ca2c20c" type="18" name="Roll" wave_id="0"
+             center_value="-0.04908740520477295" points="0.472|0|0.75|0.5|0.75|0.5|1|1"
+             curve_type="1" parameter_id="21" parameter_name="Sustain"/>
+  </PRESET>
+  <PRESET name="Preset 10" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="ce29cea8bc3e4126b4e5e9318dba2aa4" focused="0" midi_channel="0"
+          custom_preset_name="Borders of Seltjarnarnes">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.5.2"
+            state="1109.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvBEDlbv8kbg41YkAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DfBEDlbv8kbgQWY.XWXrUWY.DPBD.....XlYl6O..UPRETS.Df.oQF.ArPAgIGbeMGcgQWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAgQGcgM1Z.XWXrUWY.DPBD.....T35Q3O..UPRETS.Df.oQF.AfPAiUGcuYlY.XWXrUWY.DPBD.........9O..UPRETS.Df.oQF.AbPAjU1XgkG.1EFa0UF.Aj.A....fQgqW+C.PEjTA0D.AHPZjAP.KT.YoYlY0MWZu4F.1EFa0UF.Aj.A....fYlYl+C.PEjTA0D.AHPZjAP.GT.YxklckAfcgwVckAP.IP.....fBWO5+..TAIUPMAP.BjFY.D.BEPlb001Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEPlb001Wx.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceEC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.OT.YxUWaeMWYrU1Xz8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAk41Yo4VY.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AfPAlIWYkoWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.ArPAnElbs8laoM1b.XWXrUWY.DPBD.....nv0C9O..UPRETS.Df.oQF.AnPAs8FYDUFbzgF.1EFa0UF.Aj.A....fdT3p+C.PEjTA0D.AHPZjAP.JTPauQ1TvUVYjAfcgwVckAP.IP.....3+++6+..TAIUPMAP.BjFY.DvAEz1axAGZ.XWXrUWY.DPBD.....rGEN9O..UPRETS.Df.oQF.AvPAvkFcig1WhUlajAfcgwVckAP.IP......HEdG.C.TAIUPMAP.BjFY.DPBEHWYrUVXyUF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.KTfbkM2atElaiUF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.HTfbkYWYxIF.1EFa0UF.Aj.A....f0iBG+C.PEjTA0D.AHPZjAP.NTfbkYWYxI1WjU1XgkG.1EFa0UF.Aj.A.....tdTn+C.PEjTA0D.AHPZjAP.FTvbooWY.XWXrUWY.DPBD.....rGE..P..UPRETS.Df.oQF.AjPAyU2bzEVZtAfcgwVckAP.IP.....viBWy+..TAIUPMAP.BjFY.D.BEPWZsIlbkAfcgwVckAP.IP.....35Qg4+.."/>
+    <MAPPING id="a15b6db10286434594df7073695e766e" type="17" name="Pan" wave_id="0"
+             points="0.502564|0.283505|0.751282|0.641753|0.751282|0.641753|1|1"
+             center_value="0.0" curve_type="1" curve_view_visible="0" parameter_id="6"
+             parameter_name="Timbre"/>
+    <MAPPING id="a4dca906913d4045abac8e8ca10c2ca2" type="18" name="Roll" wave_id="0"
+             center_value="0.0" points="0.482051|0.0360825|0.741026|0.518041|0.741026|0.518041|1|1"
+             curve_type="1" curve_view_visible="1" parameter_id="7" parameter_name="Morph"/>
+    <MAPPING id="5db6342b050c4ebea2422f16c78816d1" type="18" name="Roll" wave_id="0"
+             center_value="0.1963495016098022" points="0|0|5.96046e-08|1|1|0|1|1"
+             curve_type="2" parameter_id="8" parameter_name="Pitch Bend" curve_view_visible="0"/>
+  </PRESET>
+  <PRESET name="Preset 10" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="2f2bacd3daa3416695b82ccfcac67d80" focused="0" midi_channel="0"
+          custom_preset_name="Pulse-Width Modulation">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1109.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvBEDlbv8kbg41YkAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DfBEDlbv8kbgQWY.XWXrUWY.DPBD.....XlYl6O..UPRETS.Df.oQF.ArPAgIGbeMGcgQWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAgQGcgM1Z.XWXrUWY.DPBD.....XlYl6O..UPRETS.Df.oQF.AfPAiUGcuYlY.XWXrUWY.DPBD.........9O..UPRETS.Df.oQF.AbPAjU1XgkG.1EFa0UF.Aj.A.....lYl49C.PEjTA0D.AHPZjAP.KT.YoYlY0MWZu4F.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.GT.YxklckAfcgwVckAP.IP.....v0iB4+..TAIUPMAP.BjFY.D.BEPlb001Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEPlb001Wx.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceEC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.OT.YxUWaeMWYrU1Xz8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAk41Yo4VY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAlIWYkoWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.ArPAnElbs8laoM1b.XWXrUWY.DPBD.........9O..UPRETS.Df.oQF.AnPAs8FYDUFbzgF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.JTPauQ1TvUVYjAfcgwVckAP.IP.....3+++6+..TAIUPMAP.BjFY.DvAEz1axAGZ.XWXrUWY.DPBD.........9O..UPRETS.Df.oQF.AvPAvkFcig1WhUlajAfcgwVckAP.IP.............TAIUPMAP.BjFY.DPBEHWYrUVXyUF.1EFa0UF.Aj.A.....lYl49C.PEjTA0D.AHPZjAP.KTfbkM2atElaiUF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.HTfbkYWYxIF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.NTfbkYWYxI1WjU1XgkG.1EFa0UF.Aj.A.....lYlI+C.PEjTA0D.AHPZjAP.FTvbooWY.XWXrUWY.DPBD.....rGE..P..UPRETS.Df.oQF.AjPAyU2bzEVZtAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.D.BEPWZsIlbkAfcgwVckAP.IP.........3+.."/>
+    <MAPPING id="16148c62dbb649318846779b704c7f7f" type="16" name="Tilt" parameter_id="6"
+             parameter_name="Timbre" wave_id="0" curve_view_visible="1" points="0.538462|0.525773|0.548718|0.902062|0.548718|0.902062|1|0.902062"
+             center_value="0.0" curve_type="3" mute="0"/>
+    <MAPPING id="ea251c8fb5a04a41b81a7e710526df22" type="17" name="Pan" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             parameter_id="7" parameter_name="Morph" mute="1"/>
+  </PRESET>
+  <PRESET name="Preset 16" open_by_default="0" active_by_default="1" accumulative_movements="0"
+          id="83c598133a7a4fbe845d877d57243f6c" focused="0" midi_channel="0"
+          custom_preset_name="Through The Glass Castle">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1105.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.EDv.......UPRETS.Df.oQF.ArPAgIGbeIWXtcVY.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AnPAgIGbeIWXzUF.1EFa0UF.Aj.A.....WOJ79C.PEjTA0D.AHPZjAP.KTPXxA2WyQWXzUF.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.HTPXzQWXisF.1EFa0UF.Aj.A....f0iB29C.PEjTA0D.AHPZjAP.HTvX0Q2alYF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.GT.YkMVX4AfcgwVckAP.IP.....3Qgqy+..TAIUPMAP.BjFY.DvBEPVZlYVcyk1atAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DvAEPlboYWY.XWXrUWY.DPBD.....35QA9O..UPRETS.Df.oQF.AfPAjIWcs8UL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAjIWcs8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.A7PAjIWcs80bkwVYiQ2Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceIC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTPYtcVZtUF.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.HTfYxUVY5UF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.KT.ZgIWau4VZiMG.1EFa0UF.Aj.A.....Jb8f+C.PEjTA0D.AHPZjAP.JTPauQFQkAGcnAfcgwVckAP.IP.............TAIUPMAP.BjFY.DfBEz1ajMEbkUFY.XWXrUWY.DPBD.....9+++9O..UPRETS.Df.oQF.AbPAs8lbvgF.1EFa0UF.Aj.A.....tdTf+C.PEjTA0D.AHPZjAP.LT.boQ2Xn8kXk4FY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AjPAxUFakE1bkAfcgwVckAP.IP.....XT354+..TAIUPMAP.BjFY.DvBEHWYy8lag41XkAfcgwVckAP.IP.........3+..TAIUPMAP.BjFY.D.BEHWY1UlbhAfcgwVckAP.IP.....PgqG0+..TAIUPMAP.BjFY.DfCEHWY1Ulbh8EYkMVX4AfcgwVckAP.IP.....fYlYx+..TAIUPMAP.BjFY.DfAELWZ5UF.1EFa0UF.Aj.A.....6QA..D.PEjTA0D.AHPZjAP.ITvb0MGcgkla.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AfPAzkVahIWY.XWXrUWY.DPBD.....jBWO8O.."/>
+    <MAPPING id="fef7c7c321da41cda27e311920aab397" type="16" name="Tilt" wave_id="0"
+             center_value="0.0" points="0.5|1|0.75|0.674479|0.75|0.674479|1|0.348958"
+             curve_type="1" parameter_id="5" parameter_name="Harmonics" curve_view_visible="1"
+             solo="1"/>
+    <MAPPING id="d53fe493d22b4980a758ee313b3081d4" type="17" name="Pan" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             parameter_id="6" parameter_name="Timbre" curve_view_visible="1"
+             mute="1"/>
+    <MAPPING id="e690b841f1bd4f56a8fb880acc4b2c60" type="18" name="Roll" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             parameter_id="7" parameter_name="Morph" curve_view_visible="1"
+             mute="1"/>
+    <MAPPING id="01aabf6a69fd4cbc968fad479b992eaa" type="18" name="Roll" wave_id="0"
+             center_value="0.0" points="0.526042|0.552083|0.763021|0.776042|0.763021|0.776042|1|1"
+             curve_type="1" parameter_id="12" parameter_name="Reverb - Send"
+             curve_view_visible="1" mute="1"/>
+  </PRESET>
+  <PRESET name="Preset 18" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="f6a84812e5ed4b31ae2d03836bfa9975" focused="0" midi_channel="0"
+          custom_preset_name="O-Genki Desu Ka?">
+    <PLUGIN id="Internal-Synthwave-9b6f12c5-b26ef015" name="Synthwave" version="0.6.0"
+            state="1109.SklakcWX1UF..DvFPEjTA0D.AHPZjAP.JTPXxA2Ws8FYkAfcgwVckAP.IP.............TAIUPMAP.BjFY.DvBEDlbv8kbg41YkAfcgwVckAP.IP.........7+..TAIUPMAP.BjFY.DfBEDlbv8kbgQWY.XWXrUWY.DPBD.....XlYl6O..UPRETS.Df.oQF.ArPAgIGbeMGcgQWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAgQGcgM1Z.XWXrUWY.DPBD.....T35Q3O..UPRETS.Df.oQF.AfPAiUGcuYlY.XWXrUWY.DPBD.....NJbc9O..UPRETS.Df.oQF.AbPAjU1XgkG.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.KT.YoYlY0MWZu4F.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.GT.YxklckAfcgwVckAP.IP.....PgqG4+..TAIUPMAP.BjFY.D.BEPlb001Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEPlb001Wx.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceEC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.OT.YxUWaeMWYrU1Xz8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAk41Yo4VY.XWXrUWY.DPBD........PAP..UPRETS.Df.oQF.AfPAlIWYkoWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.ArPAnElbs8laoM1b.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AnPAs8FYDUFbzgF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.JTPauQ1TvUVYjAfcgwVckAP.IP.....3+++6+..TAIUPMAP.BjFY.DvAEz1axAGZ.XWXrUWY.DPBD.........+O..UPRETS.Df.oQF.AvPAvkFcig1WhUlajAfcgwVckAP.IP.........R.C.TAIUPMAP.BjFY.DPBEHWYrUVXyUF.1EFa0UF.Aj.A.....EtdD9C.PEjTA0D.AHPZjAP.KTfbkM2atElaiUF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.HTfbkYWYxIF.1EFa0UF.Aj.A....f0iBG+C.PEjTA0D.AHPZjAP.NTfbkYWYxI1WjU1XgkG.1EFa0UF.Aj.A.....lYlI+C.PEjTA0D.AHPZjAP.FTvbooWY.XWXrUWY.DPBD.....rGE..P..UPRETS.Df.oQF.AjPAyU2bzEVZtAfcgwVckAP.IP.....v0iBu+..TAIUPMAP.BjFY.D.BEPWZsIlbkAfcgwVckAP.IP.....Hb8nz+.."/>
+    <MAPPING id="b7e15a2015404d93b86bf0235edb0e14" type="17" name="Pan" parameter_id="5"
+             parameter_name="Harmonics" wave_id="0" curve_view_visible="1"
+             points="0.517949|0.314433|0.758974|0.657216|0.758974|0.657216|1|1"
+             center_value="0.0" curve_type="1"/>
+    <MAPPING id="3979bc1ef48447d3a41e73a3f657ea10" type="16" name="Tilt" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             parameter_id="6" parameter_name="Timbre" curve_view_visible="1"
+             mute="1"/>
+    <MAPPING id="52afb7e5104948a48f42e97e0002b990" type="16" name="Tilt" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             parameter_id="7" parameter_name="Morph" curve_view_visible="1"
+             mute="1"/>
+  </PRESET>
+  <PRESET name="" open_by_default="0" accumulative_movements="1" id="946b5165e4504537b25990c2f0860b45"
+          focused="0" active_by_default="1" custom_preset_name="80s Snare"
+          midi_channel="0">
+    <PLUGIN id="Internal-Drumwave-9267945b-f434e3bf" name="Drumwave" ver1sion="0.6.0"
+            state="585.DIWcscWX1UF..DfCPEjTA0D.AHPZjAP.HTvX0Q2alYF.1EFa0UF.Aj.A........f+C.PEjTA0D.AHPZjAP.KT.YoYlY0MWZu4F.1EFa0UF.Aj.A........v+C.PEjTA0D.AHPZjAP.GT.YxklckAfcgwVckAP.IP.........3+..TAIUPMAP.BjFY.D.BEPlb001Ww.fcgwVckAP.IP.............TAIUPMAP.BjFY.D.BEPlb001Wx.fcgwVckAP.IP.............TAIUPMAP.BjFY.DvCEPlb001WyUFakMFceEC.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.OT.YxUWaeMWYrU1Xz8kL.XWXrUWY.DPBD.............UPRETS.Df.oQF.AfPAlIWYkoWY.XWXrUWY.DPBD.............UPRETS.Df.oQF.AnPAs8FYDUFbzgF.1EFa0UF.Aj.A............PEjTA0D.AHPZjAP.JTPauQ1TvUVYjAfcgwVckAP.IP.....3+++6+..TAIUPMAP.BjFY.DvBEHWYy8lag41XkAfcgwVckAP.IP.........3+..TAIUPMAP.BjFY.D.BEHWY1UlbhAfcgwVckAP.IP.....nv0i1+..TAIUPMAP.BjFY.DfCEHWY1Ulbh8EYkMVX4AfcgwVckAP.IP.....fYlYx+..TAIUPMAP.BjFY.DfAELWZ5UF.1EFa0UF.Aj.A.....6QA..D."/>
+    <MAPPING id="cd4f4132482d49d4943313f876685aa3" type="20" name="TAP" wave_id="0"
+             mute="0" tap_sensitivity="0.7126288414001465" parameter_id="0"
+             parameter_name="Drum #1"/>
+    <MAPPING id="c41658d859d8422abcbbb7143eb2694e" type="17" name="Pan" wave_id="0"
+             center_value="0.7666069269180298" points="0.5|0|0.75|0.5|0.75|0.5|1|1"
+             curve_type="1" curve_view_visible="0" parameter_id="2" parameter_name="Select Drum #1"/>
+  </PRESET>
+  <PRESET name="Preset 5" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="123d7e91cb7e40cc9d88c495aeb6b558" focused="0" custom_preset_name="MIDI - Vibrato to Pitch Bend"
+          midi_channel="0">
+    <MAPPING id="f79853dc45d44fa798e76c39bae7d6de" type="19" name="Vibrato"
+             wave_id="0" sensitivity="0.3247422575950623" aux_midi="e0 00 00"/>
+  </PRESET>
+  <PRESET name="Preset 15" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="94e848d9717341e48273cafe9834eb2f" focused="0" midi_channel="0"
+          custom_preset_name="MIDI - Tilt to CC 15">
+    <MAPPING id="164d392924e04db187c86734fdc6ace5" type="16" name="Tilt" wave_id="0"
+             center_value="0.0" points="0.5|0|0.75|0.5|0.75|0.5|1|1" curve_type="1"
+             aux_midi="b0 0f 00"/>
+  </PRESET>
+  <PRESET name="Preset 19" open_by_default="0" active_by_default="1" accumulative_movements="1"
+          id="36d4e6bf6c2240a3ab23d52db5ce819a" focused="0" midi_channel="6"
+          custom_preset_name="modosc">
+    <MAPPING id="ac0792ebcd084b808f95ce242d4b362d" type="16" name="Tilt" points="0.5|0|0.75|0.5|0.75|0.5|1|1"
+             curve_type="1" center_value="0.0" wave_id="0" curve_view_visible="0"
+             mute="0" aux_midi="b6 01 00"/>
+    <MAPPING id="2f919e44d2c743deb844c2b7fc848c27" type="17" name="Pan" points="0.5|0|0.75|0.5|0.75|0.5|1|1"
+             curve_type="1" center_value="0.0" wave_id="0" aux_midi="b6 02 00"/>
+    <MAPPING id="65c1ed575a7a46be9c3be1c29f7c67f8" type="18" name="Roll" points="0.5|0|0.75|0.5|0.75|0.5|1|1"
+             curve_type="1" center_value="0.0" wave_id="0" aux_midi="b6 03 00"/>
+    <MAPPING id="a1d17c6366ef4173afe8293c3d05ffef" type="19" name="Vibrato"
+             sensitivity="0.75" wave_id="0" aux_midi="b6 04 00"/>
+    <MAPPING id="bcd5a6227c284d06ba922f83ae2bd579" type="20" name="Tap" tap_sensitivity="0.5"
+             wave_id="0" aux_midi="b6 05 00"/>
+    <MAPPING id="18afdd5888b64f1880a02f299127dd92" type="21" name="Click"
+             button_event="1|6" click_type="1" wave_id="0"/>
+  </PRESET>
+</PRESET_BANK>
