@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
+		"rect" : [ 606.0, 97.0, 1040.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,29 +42,62 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
-					"id" : "obj-17",
-					"linecount" : 6,
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 306.0, 241.0, 371.0, 102.0 ],
-					"text" : "/modosc/points/right/rot_rpy : [-90.8463, 40.6841, 58.4],\n/modosc/points/right/pos : [9.2, 26.2063, 245.24],\n/modosc/points/left/rot_rpy : [-0., 0., -72.4],\n/modosc/points/left/pos : [95.8, 0., 0.],\n/pointlist : \"/left\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
 					"id" : "obj-15",
-					"linecount" : 8,
-					"maxclass" : "o.display",
+					"linecount" : 3,
+					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 187.0, 697.0, 519.0, 129.0 ],
-					"text" : "/modosc/points/right/rot_rpy : [-90.8463, 40.6841, 58.4],\n/modosc/points/right/pos : [9.2, 26.2063, 245.24],\n/modosc/points/left/rot_rpy : [-0., 0., -72.4],\n/modosc/points/left/pos : [95.8, 0., 0.],\n/pointlist : \"/left\",\n/point_addr : \"/modosc/points/left/pos\",\n/in_pos : [95.8, 0., 0.],\n/tmp_aed : [0., 0., 95.8]"
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 48.0, 923.0, 471.0, 59.0 ],
+					"text" : "delete(/addr_in), delete(/i), delete(/xyz2aed), delete(/rad2deg), delete(/a), delete(/e), delete(/d), delete(/pointlist)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 582.0, 18.5, 271.0, 33.0 ],
+					"text" : "mo.cart2sph\nTransform Cartesian coordinates to spherical"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"int" : 1,
+					"maxclass" : "gswitch2",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 48.0, 641.0, 39.0, 32.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 774.0, 114.0, 83.0, 22.0 ],
+					"text" : "route degrees"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 512.0, 693.0, 150.0, 20.0 ],
+					"text" : "1rad × 180/π = 57,296°"
 				}
 
 			}
@@ -72,28 +105,56 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"linecount" : 5,
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 383.0, 125.0, 381.0, 78.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 109, 111, 100, 111, 115, 99, 47, 112, 111, 105, 110, 116, 115, 47, 114, 105, 103, 104, 116, 47, 114, 111, 116, 95, 114, 112, 121, 0, 0, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, -64, 86, -74, 41, -57, 121, -90, -75, 64, 68, 87, -112, -106, -69, -104, -56, 64, 77, 51, 51, 51, 51, 51, 51, 0, 0, 0, 60, 47, 109, 111, 100, 111, 115, 99, 47, 112, 111, 105, 110, 116, 115, 47, 114, 105, 103, 104, 116, 47, 112, 111, 115, 0, 0, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, 64, 34, 102, 102, 102, 102, 102, 102, 64, 58, 52, -48, 19, -87, 42, 48, 64, 110, -89, -82, 20, 122, -31, 72, 0, 0, 0, 60, 47, 109, 111, 100, 111, 115, 99, 47, 112, 111, 105, 110, 116, 115, 47, 108, 101, 102, 116, 47, 114, 111, 116, 95, 114, 112, 121, 0, 44, 100, 100, 100, 0, 0, 0, 0, -128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -64, 82, 25, -103, -103, -103, -103, -102, 0, 0, 0, 56, 47, 109, 111, 100, 111, 115, 99, 47, 112, 111, 105, 110, 116, 115, 47, 108, 101, 102, 116, 47, 112, 111, 115, 0, 44, 100, 100, 100, 0, 0, 0, 0, 64, 87, -13, 51, 51, 51, 51, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-					"saved_bundle_length" : 272,
-					"text" : "/modosc/points/right/rot_rpy : [-90.8463, 40.6841, 58.4],\n/modosc/points/right/pos : [9.2, 26.2063, 245.24],\n/modosc/points/left/rot_rpy : [-0., 0., -72.4],\n/modosc/points/left/pos : [95.8, 0., 0.]"
+					"id" : "obj-40",
+					"linecount" : 8,
+					"maxclass" : "o.expr.codebox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 53.0, 475.0, 320.0, 127.0 ],
+					"text" : "map(\n   lambda([i], \n     assign(/addr_in[[i]]+\"_aed\", \n       apply(/xyz2aed, value(/addr_in[[i]])\n       )\n     )\n   ), /i\n)"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 118.0, 29.5, 22.0 ],
-					"text" : "/left"
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-28",
+					"linecount" : 7,
+					"maxclass" : "o.expr.codebox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 53.0, 341.0, 702.0, 114.0 ],
+					"text" : "/xyz2aed = quote( lambda( [in_pos] , \n   /a = atan2(in_pos[[1]] , in_pos[[0]]), #azimuth\n   /e = atan2(in_pos[[2]] , sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) ) ), #elevation\n   /d = sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) + pow( in_pos[[2]] , 2) ), #distance\n   [/a, /e, /d]\n                  )\n            )"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-22",
+					"linecount" : 13,
+					"maxclass" : "o.expr.codebox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 96.0, 693.0, 392.0, 195.0 ],
+					"text" : "# conversion to degrees\n/rad2deg = quote( lambda( [in_rad] ,\n    [in_rad] * (180 / pi() )\n                  )\n           ),\nmap(\n   lambda([i], \n     assign(/addr_in[[i]]+\"_aed\", \n       apply(/rad2deg, value(/addr_in[[i]] + \"_aed\" )\n       )\n     )\n   ), /i\n)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 813.0, 341.0, 202.0, 47.0 ],
+					"text" : "azimuth = atan2(y,x)\nelevation = atan2(z,sqrt(x.^2 + y.^2))\nr = sqrt(x.^2 + y.^2 + z.^2)"
 				}
 
 			}
@@ -115,7 +176,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 438.0, 55.0, 150.0, 20.0 ],
+					"patching_rect" : [ 368.5, 33.0, 150.0, 20.0 ],
 					"text" : "list: points to convert"
 				}
 
@@ -129,7 +190,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 383.0, 50.0, 30.0, 30.0 ]
+					"patching_rect" : [ 318.0, 24.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -152,7 +213,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 153.0, 80.0, 72.0, 22.0 ],
+					"patching_rect" : [ 153.0, 63.0, 72.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -164,7 +225,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 153.0, 40.0, 58.0, 22.0 ],
+					"patching_rect" : [ 153.0, 24.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -174,14 +235,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-4",
-					"linecount" : 14,
+					"linecount" : 2,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 62.0, 372.0, 615.0, 222.0 ],
-					"presentation_linecount" : 14,
-					"text" : "/point_addr = \"/modosc/points\"+/pointlist[[0]]+\"/pos\",\n\n/in_pos = value(/point_addr),\n\n/tmp_aed = [0, 0, 0],\n\n/tmp_aed[[0]] = atan(/in_pos[[1]] / /in_pos[[0]] ), #azimuth\n/tmp_aed[[1]] = /in_pos[[2]], #elevation\n/tmp_aed[[2]] = sqrt(pow(/in_pos[[0]] , 2) + pow(/in_pos[[1]] , 2) ) #distance\n\n\n\n\n\n"
+					"patching_rect" : [ 53.0, 273.0, 651.0, 46.0 ],
+					"text" : "/addr_in = \"/modosc/points\"+/pointlist+\"/pos\", #addresses of the points to convert\n/i = aseq(0, length(/addr_in)-1)                         # a list of indeces [0,..,N-1]  "
 				}
 
 			}
@@ -193,7 +253,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.0, 772.0, 30.0, 30.0 ]
+					"patching_rect" : [ 48.0, 1000.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -220,40 +280,65 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"order" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
 					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 1 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"midpoints" : [ 783.5, 629.0, 57.5, 629.0 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-49", 1 ]
 				}
 
 			}
@@ -261,6 +346,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-6", 1 ]
 				}
 
 			}
@@ -285,19 +377,12 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -397,8 +482,8 @@
 , 			{
 				"name" : "scope~001",
 				"default" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ]
+					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
