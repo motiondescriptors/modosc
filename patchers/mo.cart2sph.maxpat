@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 606.0, 97.0, 1040.0, 937.0 ],
+		"rect" : [ 606.0, 97.0, 1190.0, 1211.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,115 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"align" : 0,
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"fontsize" : 13.0,
+					"id" : "obj-236",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 508.0, 26.866699000000001, 289.0, 21.0 ],
+					"text" : "https://github.com/motiondescriptors/modosc",
+					"textjustification" : 0,
+					"textoncolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"underline" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 9.0,
+					"hidden" : 1,
+					"id" : "obj-235",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 779.5, 52.764816000000003, 114.0, 30.0 ],
+					"text" : ";\rmax launchbrowser $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-19",
+					"maxclass" : "comment",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 508.0, 7.866699, 264.0, 36.0 ],
+					"suppressinlet" : 1,
+					"text" : "modosc: motion descriptors library\n",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 3,
+					"fontsize" : 30.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 25.0, 7.866699, 280.0, 40.0 ],
+					"suppressinlet" : 1,
+					"text" : "mo.cart2sph",
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"grad1" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"grad2" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"id" : "obj-14",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.0, 7.866699, 359.0, 40.0 ],
+					"proportion" : 0.673267,
+					"pt1" : [ -0.00495, 0.556522 ],
+					"pt2" : [ 1.173267, 0.556522 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.0, 52.764816000000003, 765.0, 21.0 ],
+					"text" : "Convert position coordinates of a list of points from Cartesian (xyz) to spherical (aed),"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "" ],
+					"patching_rect" : [ 500.0, 333.0, 93.0, 22.0 ],
+					"text" : "mo.acceleration"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-15",
@@ -48,20 +157,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 48.0, 923.0, 471.0, 59.0 ],
+					"patching_rect" : [ 37.0, 1038.0, 471.0, 59.0 ],
 					"text" : "delete(/addr_in), delete(/i), delete(/xyz2aed), delete(/rad2deg), delete(/a), delete(/e), delete(/d), delete(/pointlist)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 582.0, 18.5, 271.0, 33.0 ],
-					"text" : "mo.cart2sph\nTransform Cartesian coordinates to spherical"
 				}
 
 			}
@@ -74,7 +171,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 48.0, 641.0, 39.0, 32.0 ]
+					"patching_rect" : [ 37.0, 756.0, 39.0, 32.0 ]
 				}
 
 			}
@@ -85,7 +182,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 774.0, 114.0, 83.0, 22.0 ],
+					"patching_rect" : [ 763.0, 229.0, 83.0, 22.0 ],
 					"text" : "route degrees"
 				}
 
@@ -96,7 +193,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 512.0, 693.0, 150.0, 20.0 ],
+					"patching_rect" : [ 501.0, 808.0, 150.0, 20.0 ],
 					"text" : "1rad × 180/π = 57,296°"
 				}
 
@@ -111,7 +208,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 53.0, 475.0, 320.0, 127.0 ],
+					"patching_rect" : [ 42.0, 590.0, 320.0, 127.0 ],
 					"text" : "map(\n   lambda([i], \n     assign(/addr_in[[i]]+\"_aed\", \n       apply(/xyz2aed, value(/addr_in[[i]])\n       )\n     )\n   ), /i\n)"
 				}
 
@@ -126,7 +223,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 53.0, 341.0, 702.0, 114.0 ],
+					"patching_rect" : [ 42.0, 456.0, 702.0, 114.0 ],
 					"text" : "/xyz2aed = quote( lambda( [in_pos] , \n   /a = atan2(in_pos[[1]] , in_pos[[0]]), #azimuth\n   /e = atan2(in_pos[[2]] , sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) ) ), #elevation\n   /d = sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) + pow( in_pos[[2]] , 2) ), #distance\n   [/a, /e, /d]\n                  )\n            )"
 				}
 
@@ -141,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 96.0, 693.0, 392.0, 195.0 ],
+					"patching_rect" : [ 85.0, 808.0, 392.0, 195.0 ],
 					"text" : "# conversion to degrees\n/rad2deg = quote( lambda( [in_rad] ,\n    [in_rad] * (180 / pi() )\n                  )\n           ),\nmap(\n   lambda([i], \n     assign(/addr_in[[i]]+\"_aed\", \n       apply(/rad2deg, value(/addr_in[[i]] + \"_aed\" )\n       )\n     )\n   ), /i\n)"
 				}
 
@@ -153,7 +250,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 813.0, 341.0, 202.0, 47.0 ],
+					"patching_rect" : [ 802.0, 456.0, 202.0, 47.0 ],
 					"text" : "azimuth = atan2(y,x)\nelevation = atan2(z,sqrt(x.^2 + y.^2))\nr = sqrt(x.^2 + y.^2 + z.^2)"
 				}
 
@@ -165,7 +262,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 53.0, 214.0, 48.0, 22.0 ],
+					"patching_rect" : [ 42.0, 329.0, 48.0, 22.0 ],
 					"text" : "o.union"
 				}
 
@@ -176,7 +273,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 368.5, 33.0, 150.0, 20.0 ],
+					"patching_rect" : [ 357.5, 148.0, 150.0, 20.0 ],
 					"text" : "list: points to convert"
 				}
 
@@ -185,12 +282,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 318.0, 24.0, 30.0, 30.0 ]
+					"patching_rect" : [ 307.0, 139.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -201,7 +298,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 153.0, 137.0, 91.0, 22.0 ],
+					"patching_rect" : [ 142.0, 252.0, 91.0, 22.0 ],
 					"text" : "o.pack /pointlist"
 				}
 
@@ -213,7 +310,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 153.0, 63.0, 72.0, 22.0 ],
+					"patching_rect" : [ 142.0, 178.0, 72.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -225,7 +322,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 153.0, 24.0, 58.0, 22.0 ],
+					"patching_rect" : [ 142.0, 139.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -240,7 +337,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 53.0, 273.0, 651.0, 46.0 ],
+					"patching_rect" : [ 42.0, 388.0, 651.0, 46.0 ],
 					"text" : "/addr_in = \"/modosc/points\"+/pointlist+\"/pos\", #addresses of the points to convert\n/i = aseq(0, length(/addr_in)-1)                         # a list of indeces [0,..,N-1]  "
 				}
 
@@ -249,11 +346,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.0, 1000.0, 30.0, 30.0 ]
+					"patching_rect" : [ 37.0, 1115.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -261,12 +358,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.0, 28.0, 30.0, 30.0 ]
+					"patching_rect" : [ 42.0, 143.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -301,6 +398,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-235", 0 ],
+					"hidden" : 1,
+					"midpoints" : [ 652.5, 48.933349999999997, 789.0, 48.933349999999997 ],
+					"source" : [ "obj-236", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -323,7 +429,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
-					"midpoints" : [ 783.5, 629.0, 57.5, 629.0 ],
+					"midpoints" : [ 772.5, 744.0, 46.5, 744.0 ],
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -378,6 +484,35 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "mo.acceleration.maxpat",
+				"bootpath" : "~/Dropbox/_FV_git/GitHub/modosc/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
@@ -482,8 +617,8 @@
 , 			{
 				"name" : "scope~001",
 				"default" : 				{
-					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ],
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
