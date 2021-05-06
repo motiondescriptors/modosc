@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 606.0, 97.0, 1190.0, 1211.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -137,18 +137,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "" ],
-					"patching_rect" : [ 500.0, 333.0, 93.0, 22.0 ],
-					"text" : "mo.acceleration"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-15",
@@ -208,7 +196,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 42.0, 590.0, 320.0, 127.0 ],
+					"patching_rect" : [ 42.0, 590.0, 321.0, 130.0 ],
 					"text" : "map(\n   lambda([i], \n     assign(/addr_in[[i]]+\"_aed\", \n       apply(/xyz2aed, value(/addr_in[[i]])\n       )\n     )\n   ), /i\n)"
 				}
 
@@ -223,8 +211,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 42.0, 456.0, 702.0, 114.0 ],
-					"text" : "/xyz2aed = quote( lambda( [in_pos] , \n   /a = atan2(in_pos[[1]] , in_pos[[0]]), #azimuth\n   /e = atan2(in_pos[[2]] , sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) ) ), #elevation\n   /d = sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) + pow( in_pos[[2]] , 2) ), #distance\n   [/a, /e, /d]\n                  )\n            )"
+					"patching_rect" : [ 42.0, 456.0, 704.0, 116.0 ],
+					"text" : "/xyz2aed = quote( lambda( [in_pos] , \n   /a = atan2(in_pos[[1]] , in_pos[[0]]), #azimuth\n   /e = atan2(in_pos[[2]] , sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) ) ), #elevation\n   /d = sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) + pow( in_pos[[2]] , 2) ), #distance\n   [/a, /e, /d]\n                  )\n           )"
 				}
 
 			}
@@ -238,7 +226,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 85.0, 808.0, 392.0, 195.0 ],
+					"patching_rect" : [ 85.0, 808.0, 393.0, 200.0 ],
 					"text" : "# conversion to degrees\n/rad2deg = quote( lambda( [in_rad] ,\n    [in_rad] * (180 / pi() )\n                  )\n           ),\nmap(\n   lambda([i], \n     assign(/addr_in[[i]]+\"_aed\", \n       apply(/rad2deg, value(/addr_in[[i]] + \"_aed\" )\n       )\n     )\n   ), /i\n)"
 				}
 
@@ -337,7 +325,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 42.0, 388.0, 651.0, 46.0 ],
+					"patching_rect" : [ 42.0, 388.0, 653.0, 46.0 ],
 					"text" : "/addr_in = \"/modosc/points\"+/pointlist+\"/pos\", #addresses of the points to convert\n/i = aseq(0, length(/addr_in)-1)                         # a list of indeces [0,..,N-1]  "
 				}
 
@@ -485,13 +473,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "mo.acceleration.maxpat",
-				"bootpath" : "~/Dropbox/_FV_git/GitHub/modosc/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
@@ -503,21 +484,13 @@
 				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -580,8 +553,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
