@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
+		"rect" : [ 988.0, 85.0, 890.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 779.5, 52.764816000000003, 114.0, 30.0 ],
-					"text" : ";\rmax launchbrowser $1"
+					"text" : ";\r\nmax launchbrowser $1"
 				}
 
 			}
@@ -97,7 +97,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 7.866699, 280.0, 40.0 ],
+					"patching_rect" : [ 25.0, 7.866699, 280.0, 41.0 ],
 					"suppressinlet" : 1,
 					"text" : "mo.cart2sph",
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
@@ -140,7 +140,7 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-15",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -211,7 +211,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 42.0, 456.0, 704.0, 116.0 ],
+					"patching_rect" : [ 42.0, 456.0, 704.0, 117.0 ],
 					"text" : "/xyz2aed = quote( lambda( [in_pos] , \n   /a = atan2(in_pos[[1]] , in_pos[[0]]), #azimuth\n   /e = atan2(in_pos[[2]] , sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) ) ), #elevation\n   /d = sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[1]] , 2) + pow( in_pos[[2]] , 2) ), #distance\n   [/a, /e, /d]\n                  )\n           )"
 				}
 
@@ -238,7 +238,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 802.0, 456.0, 202.0, 47.0 ],
+					"patching_rect" : [ 802.0, 456.0, 202.0, 48.0 ],
 					"text" : "azimuth = atan2(y,x)\nelevation = atan2(z,sqrt(x.^2 + y.^2))\nr = sqrt(x.^2 + y.^2 + z.^2)"
 				}
 
@@ -270,7 +270,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -334,7 +334,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -346,7 +346,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -472,25 +472,11 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -553,8 +539,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
