@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 299.0, 87.0, 1041.0, 937.0 ],
+		"rect" : [ 319.0, 152.0, 1041.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -120,7 +120,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
@@ -434,8 +433,8 @@
 						"styles" : [ 							{
 								"name" : "filtergraphBronze",
 								"default" : 								{
-									"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-									"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+									"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+									"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -675,7 +674,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 629.0, 121.866699000000011, 167.0, 48.0 ],
+					"patching_rect" : [ 625.0, 114.866699000000011, 167.0, 48.0 ],
 					"text" : "TODO: Revise so that rotation data gets stored in a quaternion"
 				}
 
@@ -911,8 +910,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
