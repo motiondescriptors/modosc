@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1041.0, 937.0 ],
+		"rect" : [ 299.0, 87.0, 1041.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -92,7 +92,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 364.0, 268.0, 703.0, 523.0 ],
+						"rect" : [ 491.0, 259.0, 703.0, 523.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -120,7 +120,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 91.5, 92.077514531250003, 29.5, 22.0 ],
+									"text" : "t l b"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-10",
 									"maxclass" : "newobj",
@@ -140,7 +153,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 19.5, 163.77001953125, 91.0, 22.0 ],
-									"text" : "left A B right"
+									"text" : "left right"
 								}
 
 							}
@@ -199,7 +212,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "", "" ],
-									"patching_rect" : [ 187.5, 112.77001953125, 40.0, 22.0 ],
+									"patching_rect" : [ 187.5, 123.77001953125, 40.0, 22.0 ],
 									"text" : "t b l l"
 								}
 
@@ -328,7 +341,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 1 ],
+									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -400,6 +413,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
 									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 1 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"source" : [ "obj-5", 1 ]
 								}
 
 							}
@@ -573,7 +600,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 794.5, 67.764815999999996, 114.0, 30.0 ],
-					"text" : ";\rmax launchbrowser $1"
+					"text" : ";\r\nmax launchbrowser $1"
 				}
 
 			}
@@ -601,7 +628,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 40.0, 22.866699000000001, 280.0, 40.0 ],
+					"patching_rect" : [ 40.0, 22.866699000000001, 280.0, 41.0 ],
 					"suppressinlet" : 1,
 					"text" : "mo.motive6Deuler",
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
@@ -648,7 +675,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 629.0, 121.866699000000011, 167.0, 47.0 ],
+					"patching_rect" : [ 629.0, 121.866699000000011, 167.0, 48.0 ],
 					"text" : "TODO: Revise so that rotation data gets stored in a quaternion"
 				}
 
