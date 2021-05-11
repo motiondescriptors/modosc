@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 141.0, 226.0, 1324.0, 774.0 ],
+		"rect" : [ 1314.0, 79.0, 1212.0, 1327.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-11",
@@ -77,12 +78,12 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-2",
-					"linecount" : 7,
+					"linecount" : 8,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 367.0, 162.866699000000011, 409.0, 106.0 ],
+					"patching_rect" : [ 367.0, 162.866699000000011, 409.0, 122.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 47, 114, 111, 116, 97, 116, 101, 120, 121, 122, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, -65, -93, -104, -104, -24, -103, -79, -19, 63, -21, 67, 36, 65, -2, -88, 17, 63, 127, 71, 32, 37, 14, -126, 79, 0, 0, 0, 48, 47, 113, 117, 97, 116, 0, 0, 0, 44, 100, 100, 100, 100, 0, 0, 0, 63, 98, 0, 2, 89, 75, -96, -67, -65, -17, 19, 127, 56, -59, 67, 108, -65, -81, 88, 1, 72, -43, 91, -24, -65, -51, -118, 0, -97, 98, 48, 119, 0, 0, 0, 40, 47, 114, 97, 119, 65, 99, 99, 0, 44, 100, 100, 100, 0, 0, 0, 0, -65, -83, 48, 39, 15, 56, -126, 40, 63, -121, -126, -45, -124, 118, -14, -90, -65, -34, -102, -111, 16, 94, 28, 21, 0, 0, 0, 40, 47, 97, 99, 99, 0, 0, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, -65, 86, -16, 6, -115, -72, -70, -57, 63, 52, -8, -75, -120, -29, 104, -15, -65, -112, -85, -76, 78, 80, -59, -21, 0, 0, 0, 40, 47, 103, 121, 114, 111, 0, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, -65, 70, -33, 63, -106, 24, 4, -38, 0, 0, 0, 0, 0, 0, 0, 0, -65, 70, -33, 63, -106, 24, 4, -38, 0, 0, 0, 24, 47, 118, 101, 114, 115, 105, 111, 110, 0, 0, 0, 0, 44, 100, 0, 0, 63, -22, 20, 122, -31, 71, -82, 20, 0, 0, 0, 24, 47, 98, 97, 116, 116, 101, 114, 121, 0, 0, 0, 0, 44, 100, 0, 0, 64, 12, -31, 71, -82, 20, 122, -31 ],
 					"saved_bundle_length" : 304,
 					"text" : "/rotatexyz : [-0.0382736, 0.851946, 0.00763619],\n/quat : [0.00219727, -0.97113, -0.0612183, -0.230774],\n/rawAcc : [-0.057008, 0.01148, -0.478184],\n/acc : [-0.0014, 0.00032, -0.01628],\n/gyro : [-0.000698, 0., -0.000698],\n/version : 0.815,\n/battery : 3.61"
@@ -95,9 +96,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 104.0, 193.0, 66.0, 22.0 ],
-					"text" : "unpack s s"
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 104.0, 193.0, 63.0, 22.0 ],
+					"text" : "unpack s i"
 				}
 
 			}
@@ -111,7 +112,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 17.0, 354.5, 759.0, 209.0 ],
+					"patching_rect" : [ 17.0, 354.5, 762.0, 214.0 ],
 					"text" : "#Assign data to modosc namespace\n/pnts = \"/modosc/points\", #modosc points domain\nassign(/pnts + /name/out + \"/rot_rpy\", /rotatexyz),\nassign(/pnts + /name/out + \"/quat\", /quat),\nassign(/pnts + /name/out + \"/rawAcc\", /rawAcc),\nassign(/pnts + /name/out + \"/acc\", /acc),\nassign(/pnts + /name/out + \"/acc_mag\", l2norm(/acc)), #computed to match the output of [mo.acceleration]\nassign(/pnts + /name/out + \"/gyro\", /gyro),\nassign(/pnts + /name/out + \"/version\", /version),\nassign(/pnts + /name/out + \"/battery\", /battery),\n\n#Clean up\ndelete(/name/out), delete(/pnts), delete(/rotatexyz), delete(/quat), delete(/rawAcc),\ndelete(/acc), delete(/gyro), delete(/version), delete(/battery)"
 				}
 
@@ -410,8 +411,8 @@
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
-					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ],
-					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ]
+					"bgcolor" : [ 0.285714, 0.256629, 0.217237, 1.0 ],
+					"color" : [ 0.010881, 0.909804, 0.896768, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -511,8 +512,8 @@
 , 			{
 				"name" : "scope~001",
 				"default" : 				{
-					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ],
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
