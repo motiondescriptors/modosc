@@ -164,7 +164,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-49",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -223,7 +222,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 42.0, 427.0, 704.0, 131.0 ],
-					"text" : "/xyz2aed = quote( lambda( [in_pos] , \n   /a = atan2(in_pos[[2]] , in_pos[[0]]), #azimuth\n   /e = atan2(in_pos[[1]] , sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[2]] , 2) ) ), #elevation\n   /d = div(sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[2]] , 2) + pow( in_pos[[1]] , 2) ), 1000), #distance\n   [/a, /e, /d]\n                  )\n           )"
+					"text" : "/xyz2aed = quote( lambda( [in_pos] , \n   /a = -1 * (atan2(in_pos[[2]] , in_pos[[0]])), #azimuth\n   /e = atan2(in_pos[[1]] , sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[2]] , 2) ) ), #elevation\n   /d = div(sqrt( pow( in_pos[[0]] , 2) + pow( in_pos[[2]] , 2) + pow( in_pos[[1]] , 2) ), 1000), #distance\n   [/a, /e, /d]\n                  )\n           )"
 				}
 
 			}
