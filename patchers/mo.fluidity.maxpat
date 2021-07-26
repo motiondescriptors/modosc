@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 90.0, 1220.0, 1111.0 ],
+		"rect" : [ 34.0, 90.0, 1199.0, 1108.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"format" : 6,
@@ -89,7 +90,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-41",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -132,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 118.5, 406.94714399999998, 263.0, 46.0 ],
+					"patching_rect" : [ 118.5, 406.94714399999998, 234.0, 46.0 ],
 					"text" : "/state = nfill(/Npnts, 0.),\ndelete(/points), delete(/Npnts)"
 				}
 
@@ -159,7 +160,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 176.75, 258.94714399999998, 482.0, 100.0 ],
+					"patching_rect" : [ 176.75, 258.94714399999998, 473.0, 102.0 ],
 					"text" : "# The coefficient for the integrator (a 1-pole filter)\n/integtime = min([/integtime, 1.0]),\n/integtime = max([/integtime, 0.0]),\n/fb_coeff = 0.999999 * /integtime, # a1 in the 1-pole integrator\n/ff_coeff = 1 - /fb_coeff,         # b0 in the 1-pole integrator\ndelete(/integtime)"
 				}
 
@@ -232,7 +233,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 725.5, 225.143311000000011, 215.0, 32.0 ],
+					"patching_rect" : [ 725.5, 225.143311000000011, 184.0, 32.0 ],
 					"text" : "/Npnts = length(/points)"
 				}
 
@@ -252,7 +253,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-34",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -313,11 +314,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-40",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 38.5, 153.711960000000005, 30.0, 30.0 ]
 				}
 
@@ -415,7 +416,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 52.764816000000003, 919.0, 65.0 ],
+					"patching_rect" : [ 17.0, 52.764816000000003, 923.0, 65.0 ],
 					"text" : "Single point descriptor. Fluidity Index is defined as the inverse of the integral of jerk. This descriptor calculates Fluidity Index for a list of points. It requires that mo.jerk has been calculated upstream. Example: [mo.fluidity 0.5 /Hand] computes the fluidity index of the single point named /Hand and binds the result to the OSC address /modosc/points/point_name/fluidity. The first parameter, which has to be a float between 0.0 and 1.0, controls the integration time. A higher value means the descriptor \"remembers\" more of the past.  The output of mo.fluidity will be between 0.0 and 1.0."
 				}
 
@@ -465,7 +466,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 38.5, 521.0, 877.0, 413.0 ],
+					"patching_rect" : [ 38.5, 521.0, 870.0, 424.0 ],
 					"text" : "# Determine whether the points exist in the current bundle\n/addr_in = \"/modosc/points\"+/points+\"/jrk_mag\",                       # the list of input addresses we expect\n/addr_out = \"/modosc/points\"+/points+\"/fluidity\",                     # the list of addresses for the outputs\n/process = map(lambda([in], /tmp=value(in), bound(/tmp)), /addr_in),  # test whether each address has data bound to it \n/counter = aseq(0, /Npnts-1),                                         # a list of indeces [0,..,N-1]  \n\n# Define a function which performs the action of this descriptor\n/fnProcess = \"lambda([index],       # inputs: the name of the point, its index in the list of points\n  /addr_src = /addr_in[[index]],    # the address where we expect to find the input data\n  /addr_res = /addr_out[[index]],   # the address where we will put the result\n  /in_data = value(/addr_src),      # the actual input data (acceleration in this case)\n  /idx = index,                     # indeces into the state vector for this point\n\t  \n  # run the leaky integrator\n  /out = /ff_coeff * (/in_data+1) + /fb_coeff * /state[[/idx]],\n  /state[[/idx]] = /out,\n\n  # calculate FI and assign\n  /out = 1 / /out,\n  assign( value(/addr_res), /out)\n)\",\n\n# Apply the processing function using the list of indeces and whether the data are bound, as indicated in /process \nmap(lambda([body_idx,process], if(process, apply(readstring(/fnProcess), body_idx))), /counter, /process),\n\n# Delete all the addresses we defined\ndelete(/fb_coeff), delete(/ff_coeff), delete(/addr_in), delete(/addr_out), delete(/process), delete(/counter), \ndelete(/tmp), delete(/addr_src), delete(/addr_res), delete(/in_data), delete(/idx), delete(/out),\ndelete(/fnProcess), delete(/points), delete(/Npnts)"
 				}
 
@@ -474,7 +475,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -670,28 +671,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "filtergraphBronze",
 				"default" : 				{
@@ -796,8 +775,8 @@
 , 			{
 				"name" : "scope~001",
 				"default" : 				{
-					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ],
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"accentcolor" : [ 0.439216, 0.447059, 0.47451, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
